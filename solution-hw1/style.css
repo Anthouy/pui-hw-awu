@@ -1,6 +1,6 @@
 .logo {
-    width: 100%;
-    background-image: url(image-with-4-3-aspect-ratio.svg);
+    width: 33%;
+    background-image: url(logo-01.svg);
     background-size: cover;
     height: 0;
     padding: 0; /* reset */

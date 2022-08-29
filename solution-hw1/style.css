@@ -1,10 +1,7 @@
 .logo {
-    width: 100%;
-    background-image: url(logo-01.svg);
-    background-size: cover;
-    height: 0;
-    padding: 0; /* reset */
-    padding-bottom: 50%;
-    border: thin dotted darkgrey;
-
+    width: 70px;
+    height: 70px;
+  
+    /* Add some rounded corners to the image. */
+    border-radius: 5px;
   }

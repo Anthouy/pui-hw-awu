@@ -22,6 +22,22 @@
     font-weight: 100;
   }
 
+  .figure {
+    display:block;
+    margin: 125px auto 0px auto;
+    width: 325px;
+    border: 5px solid #000000;
+  }
+
+  .figcaption {
+    background-color: white;
+    color: black;
+    font-style: underline;
+    padding: 2px;
+    text-align: center;
+  }
+
+
   .cinnamon {
     display:block;
     margin: 125px auto 0px auto;

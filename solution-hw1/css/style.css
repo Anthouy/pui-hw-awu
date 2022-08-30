@@ -5,3 +5,11 @@
   p.solid {
     border-style: solid;
   }
+
+  .title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #dddddd;
+    font-size: 18px;
+    font-weight: 500;
+  }

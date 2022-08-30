@@ -27,3 +27,11 @@
     margin: 0px auto 0px auto;
     width: 350px;
   }
+
+  .cinnamondescription {
+    text-align: center;
+    margin: 15px;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 100;
+  }

@@ -29,17 +29,17 @@
     border: 5px solid #000000;
   }
 
-  .cinnamondescription {
+  .cinnamonprice {
     text-align: center;
-    text-decoration: underline;
-    margin: 15px;
     color: #000000;
     font-size: 24px;
     font-weight: 100;
   }
 
-  .cinnamonprice {
+  .cinnamondescription {
     text-align: center;
+    text-decoration: underline;
+    margin: 15px;
     color: #000000;
     font-size: 24px;
     font-weight: 100;

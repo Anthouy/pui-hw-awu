@@ -58,6 +58,9 @@ p.solid {
     display: block;
     width: 350px;
     height: 425px;
+    border: none;
+    background: none;
+    background-color: #ffffff;
     margin: 25px auto 50px auto;
     padding: 0px 0px 0px 0px;
 

@@ -64,7 +64,7 @@ p.solid {
     background-color: #212121;0
     border: 2px solid #595959;
     border-radius: 5px;
-    margin: -325px auto 0px auto;
+    margin: 325px auto 0px auto;
     padding: 0;
 
     cursor: pointer;

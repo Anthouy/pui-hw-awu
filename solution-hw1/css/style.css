@@ -60,6 +60,8 @@ p.solid {
     height: 425px;
     color: #595959;
     background-color: #ffffff;0
+    border: 2px solid #595959;
+    border-radius: 5px;
     margin: 25px auto 50px auto;
     padding: 0px 0px 0px 0px;
 

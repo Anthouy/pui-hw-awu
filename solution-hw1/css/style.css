@@ -54,7 +54,7 @@ p.solid {
     font-weight: 100;
   }
 
-.btn-product {
+.btn-delete {
     width: 30px;
     height: 30px;
     font-size: 14px;
@@ -69,7 +69,7 @@ p.solid {
     cursor: pointer;
   }
 
-.btn-product:hover {
+.btn-delete:hover {
     color: #dddddd;
     background-color: #393939;
     border: 2px solid #dddddd;

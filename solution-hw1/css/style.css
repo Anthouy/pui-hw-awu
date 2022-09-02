@@ -71,5 +71,5 @@ p.solid {
 .btn-roll:hover {
     color: #dddddd;
     background-color: #f3e62c;
-    border: 2px solid #dddddd;
+    border: 0px solid #dddddd;
   }

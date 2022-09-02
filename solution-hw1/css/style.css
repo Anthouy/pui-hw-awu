@@ -32,7 +32,7 @@ p.solid {
 
 .cinnamon {
     display:block;
-    margin: 25px auto 0px auto;
+    margin: 0px auto 0px auto;
     width: 325px;
     border: 5px solid #000000;
   }

@@ -6,10 +6,25 @@ p.solid {
     border-style: solid;
   }
 
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
+a:link { 
+  text-decoration: none;
+  color: black; 
+}
+
+a:visited { 
+  text-decoration: none; 
+  color: black;
+}
+
+a:hover { 
+  text-decoration: none;
+  color: black; 
+}
+
+a:active { 
+  text-decoration: none;
+  color: black; 
+}
 
 .products {
     text-align: center;

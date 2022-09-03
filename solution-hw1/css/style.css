@@ -80,6 +80,13 @@ a:active {
   margin: 35px auto 10px auto;
 }
 
+.detailtextcontainer3 {
+  display: table-column;
+  width: 361.675px;
+  height: fit-content;
+  margin: 35px auto 10px auto;
+}
+
 .detailtext {
     display:block;
     text-align: left;
@@ -155,7 +162,7 @@ a:active {
 }
 
 .btn-add {
-  display: flex;
+  display: block;
   width: 350px;
   height: fit-content;
   border: 3px solid #000000;

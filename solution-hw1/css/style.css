@@ -155,7 +155,7 @@ a:active {
 }
 
 .btn-add {
-  display: inline-block;
+  display: flex;
   width: 350px;
   height: fit-content;
   border: 3px solid #000000;

@@ -133,5 +133,6 @@ a:active {
     width: 361.375px;
     height: fit-content;
     border: 8px solid #000000;
+    margin: 5px auto 5px auto;
 
 }

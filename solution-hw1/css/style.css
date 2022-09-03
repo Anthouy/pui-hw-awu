@@ -127,3 +127,11 @@ a:active {
 .btn-roll:hover {
     background-color: #f3e62c;
   }
+
+.menus {
+    display: block;
+    width: 361.375px;
+    height: fit-content;
+    border: 8px solid #000000;
+
+}

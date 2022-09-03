@@ -81,7 +81,7 @@ a:active {
 }
 
 .detailtextcontainer3 {
-  display: table-column;
+  display: table;
   width: 361.675px;
   height: fit-content;
   margin: 35px auto 10px auto;

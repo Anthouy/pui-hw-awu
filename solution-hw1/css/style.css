@@ -73,6 +73,13 @@ a:active {
   margin: 25px auto 50px auto;
 }
 
+.detailtextcontainer2 {
+  display: block;
+  width: 361.675px;
+  height: fit-content;
+  margin: 25px auto 25px auto;
+}
+
 .detailtext {
     display:block;
     text-align: left;

@@ -68,12 +68,13 @@ a:active {
 
 .detailtextcontainer {
   display: block;
+  text-align: center;
   margin: 80px auto 50px auto;
 }
 
 .detailtext {
     display:block;
-    text-align: center;
+    text-align: left;
     margin: 80px auto 50px auto;
     color: #000000;
     font-size: 32px;

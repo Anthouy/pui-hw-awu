@@ -167,8 +167,8 @@ a:active {
   height: fit-content;
   border: 3px solid #000000;
   background: #f3e62c;
-  margin: 25px auto 50px auto;
-  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  padding: 5px 10px 5px 10px;
 
   cursor: pointer;
 }

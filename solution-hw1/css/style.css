@@ -102,10 +102,17 @@ a:active {
     border: 5px solid #000000;
   }
 
-  .cinnamondetail {
+.cinnamondetail {
     display:block;
     margin: 5px auto 0px auto;
     width: 600px;
+    border: 5px solid #000000;
+  }
+
+.cinnamoncart {
+    display:block;
+    margin: 5px auto 0px auto;
+    width: 175px;
     border: 5px solid #000000;
   }
 

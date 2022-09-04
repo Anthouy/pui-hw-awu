@@ -74,6 +74,15 @@ a:active {
     font-weight: 100;
   }
 
+.remove {
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 175;
+  font-style: underline;
+}
+
 .detailtextcontainer {
   display: block;
   width: 361.675px;

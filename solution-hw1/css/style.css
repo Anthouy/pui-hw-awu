@@ -9,6 +9,7 @@ p.solid {
   p.solidcart {
     width: 900px;
     border-style: solid;
+    text-align: center;
   }
 
 a:link { 

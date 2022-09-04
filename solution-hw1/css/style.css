@@ -167,6 +167,8 @@ a:active {
   background: #f3e62c;
   margin: 0px;
   padding: 5px 15px 5px 15px;
+  font-size: 28px;
+  font-weight: 750;
 
   cursor: pointer;
 }

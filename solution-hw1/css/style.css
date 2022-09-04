@@ -163,8 +163,6 @@ a:active {
 
 .btn-add {
   display: block;
-  width: fit-content;
-  height: fit-content;
   border: 3px solid #000000;
   background: #f3e62c;
   margin: 0px;

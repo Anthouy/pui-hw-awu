@@ -162,7 +162,7 @@ a:active {
 }
 
 .btn-add {
-  display: contents;
+  display: block;
   border: 3px solid #000000;
   background: #f3e62c;
   margin: 0px;

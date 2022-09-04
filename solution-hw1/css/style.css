@@ -10,7 +10,7 @@ p.solid {
     display: block;
     width: 900px;
     border-style: solid;
-    margin: 0px auto 0px auto;
+    margin: 0px auto 75px auto;
   }
 
 a:link { 

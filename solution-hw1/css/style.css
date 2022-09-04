@@ -7,9 +7,10 @@ p.solid {
   }
 
   p.solidcart {
+    display: block;
     width: 900px;
     border-style: solid;
-    text-align: center;
+    margin: 0px auto 0px auto;
   }
 
 a:link { 

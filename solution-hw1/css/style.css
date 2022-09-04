@@ -6,6 +6,11 @@ p.solid {
     border-style: solid;
   }
 
+  p.solidcart {
+    width: 900px;
+    border-style: solid;
+  }
+
 a:link { 
   text-decoration: none;
   color: black; 

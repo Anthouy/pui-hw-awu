@@ -6,7 +6,7 @@ p.solid {
     border-style: solid;
   }
 
-  p.solidcart {
+p.solidcart {
     display: block;
     width: 900px;
     border-style: solid;
@@ -205,5 +205,21 @@ a:active {
 }
 
 .btn-add:hover {
+  background-color: #f3e62c;
+}
+
+.btn-chkout {
+  display: block;
+  border: 3px solid #000000;
+  background: #f3e62c;
+  margin: 0px 0px 0px 0px;
+  padding: 5px 15px 5px 15px;
+  font-size: 26px;
+  font-weight: 750;
+
+  cursor: pointer;
+}
+
+.btn-chkout:hover {
   background-color: #f3e62c;
 }

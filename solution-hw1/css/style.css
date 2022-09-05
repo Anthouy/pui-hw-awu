@@ -146,29 +146,12 @@ a:active {
     border: 5px solid #000000;
   }
 
-.cinnamonprice {
-    text-align: left;
-    margin: -10px 0px 5px 10px;
-    color: #000000;
-    font-size: 28px;
-    font-weight: 100;
-  }
-
 .cinnamonpricebold {
     text-align: left;
     margin: -10px 0px 5px 10px;
     color: #000000;
     font-size: 28px;
     font-weight: 750;
-  }
-
-.cinnamondescription {
-    text-align: left;
-    text-decoration: underline;
-    margin: 10px;
-    color: #000000;
-    font-size: 28px;
-    font-weight: 100;
   }
 
 /* button for cinnamon rolls in gallery */

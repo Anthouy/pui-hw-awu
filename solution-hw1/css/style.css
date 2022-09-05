@@ -180,6 +180,7 @@ a:active {
 /* button for cinnamon rolls in gallery */
 .btn-roll {
     display: block;
+    text-align: left;
     width: 350px;
     height: fit-content;
     border: none;

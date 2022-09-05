@@ -1,71 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <title>Page Title</title>
-  <link rel="stylesheet" href="css/style.css">
-  
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
   <body>
 
+    <header>
+
     <a href="./index.html">
-      <img class="logo" src="assets/logo/logo-01.svg" alt="Logo showing cinnamon roll">
+      <img  class="logo" 
+            src="assets/logo/logo-01.svg" 
+            alt="Logo showing cinnamon roll">
     </a>
 
     <p class="solid"></p>
 
-    <div class="products">
-      <a href="./index.html"><span style="background-color: #f3e62c">PRODUCTS</span></a>
-    </div>
+    </header>
 
-    <div class="cart">
-      <a href="./cart.html">CART</a>
-    </div>
+    <nav>
 
-    <div class="subtext">
-      Original cinnamon roll
-    </div>
-
-    <img class="cinnamondetail" src="assets/products/original-cinnamon-roll.jpg" alt="Image of original cinnamon roll">
-    
-    <div class="detailtextcontainer">
-      <div class="detailtext">
-      Customize our delicious,<br>hand-made cinnamon roll to<br>your liking!
+      <div class="products">
+        <a href="./index.html">
+          <!-- make PRODUCTS highlighted in yellow when in gallery -->
+          <span style="background-color: #f3e62c">PRODUCTS</span>
+        </a>
       </div>
-    </div>
 
-  <div class="detailtextcontainer2">
-    <div class="detailtext">
-      Glazing:
-    </div>
-  </div>
+      <div class="cart">
+        <a href="./cart.html">CART</a>
+      </div>
 
-  <select class="menus" name="glazing">
-    <option value="first" selected>Keep original</option>
-    <option value="second">Sugar milk</option>
-    <option value="third">Vanilla milk</option>
-    <option value="fourth">Double chocolate</option>
-  </select>
+    </nav>
 
-  <div class="detailtextcontainer2">
-    <div class="detailtext">
-      Pack size:
-    </div>
-  </div>
+    <main>
 
-  <select class="menus" name="size">
-    <option value="first" selected>1</option>
-    <option value="second">3</option>
-    <option value="third">6</option>
-    <option value="fourth">12</option>
-  </select>
+      <!-- title and image of original cinnamon roll -->
+      <section>
 
-  <div class="detailtextcontainer3">
-    <div class="cinnamonpricebold">
-      $2.49
-    </div>
-    <button class="btn-add" onclick="window.location.href='./cart.html';">
-      Add to Cart
-    </button>
-  </div>
+      <div class="subtext">
+        Original cinnamon roll
+      </div>
+
+      <img  class="cinnamondetail" 
+            src="assets/products/original-cinnamon-roll.jpg" 
+            alt="Image of original cinnamon roll">
+
+      </section>
+
+      <!-- customization section -->
+      <section>
+
+        <div class="detailtextcontainer">
+          <div class="detailtext">
+          Customize our delicious,<br>hand-made cinnamon roll to<br>your liking!
+          </div>
+        </div>
+
+        <!-- glazing selection -->
+        <article>
+
+          <div class="detailtextcontainer2">
+            <div class="detailtext">
+              Glazing:
+            </div>
+          </div>
+
+          <select class="menus" name="glazing">
+            <option value="first" selected>Keep original</option>
+            <option value="second">Sugar milk</option>
+            <option value="third">Vanilla milk</option>
+            <option value="fourth">Double chocolate</option>
+          </select>
+
+        </article>
+
+        <!-- size selection -->
+        <article>
+
+          <div class="detailtextcontainer2">
+            <div class="detailtext">
+              Pack size:
+            </div>
+          </div>
+
+          <select class="menus" name="size">
+            <option value="first" selected>1</option>
+            <option value="second">3</option>
+            <option value="third">6</option>
+            <option value="fourth">12</option>
+          </select>
+
+        </article>
+
+      </section>
+
+      <!-- add to cart section -->
+      <section>
+
+        <div class="detailtextcontainer3">
+          <div class="cinnamonpricebold">
+            $2.49
+          </div>
+          <button class="btn-add" 
+                  onclick="window.location.href='./cart.html';">
+            Add to Cart
+          </button>
+        </div>
+
+      </section>
+
+    </main>
 
   </body>
+
 </html>

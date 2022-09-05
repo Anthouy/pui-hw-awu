@@ -1,62 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <title>Page Title</title>
-  <link rel="stylesheet" href="css/style.css">
-  
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
   <body>
 
-    <a href="./index.html">
-      <img class="logo" src="assets/logo/logo-01.svg" alt="Logo showing cinnamon roll">
-    </a>
+    <header>
 
-    <p class="solid"></p>
+      <a href="./index.html">
+        <img  class="logo" 
+              src="assets/logo/logo-01.svg" 
+              alt="Logo showing cinnamon roll">
+      </a>
 
-    <div class="productslight">
-        <a href="./index.html">PRODUCTS</a>
-    </div>
+      <p class="solid"></p>
 
-    <div class="cartbold">
-        <a href="./cart.html"><span style="background-color: #f3e62c">CART</span></a>
-    </div>
+    </header>
 
-    <div class="subtext">
-      Shopping Cart
-    </div>
+    <nav>
 
-    <img class="cinnamoncart" src="assets/products/original-cinnamon-roll.jpg" alt="Logo showing cinnamon roll">
+      <!-- PRODUCTS is not selected, so not highlighted -->
+      <div class="productslight">
+          <a href="./index.html">PRODUCTS</a>
+      </div>
 
-    <div class="remove"><a href="">Remove</a></div>
+      <!-- CART highlighted in yellow -->
+      <div class="cartbold">
+          <a href="./cart.html"><span style="background-color: #f3e62c">CART</span></a>
+      </div>
 
-    <div class="cartdescription">
-      Original Cinnamon Roll<br>
-      Glazing: Keep original<br>
-      Pack Size: 1<br>
-      <br>
-      $ 2.49
-    </div>
+    </nav>
 
-    <img class="cinnamoncart" src="assets/products/double-chocolate-cinnamon-roll.jpg" alt="Image of double chocolate cinnamon roll">
-    
-    <div class="remove"><a href="">Remove</a></div>
+    <main>
 
-    <div class="cartdescription">
-      Double Chocolate Cinnamon Roll<br>
-      Glazing: Sugar milk<br>
-      Pack Size: 6<br>
-      <br>
-      $ 2.49
-    </div>
+      <!-- the cart -->
+      <section>
 
-    <p class="solidcart"></p>
+        <div class="subtext">
+          Shopping Cart
+        </div>
 
-    <div class="cartdescription">
-      Total: $ 29.94
-    </div>
+        <!-- first item in cart -->
+        <article>
 
-    <button class="btn-chkout" onclick="window.location.href='./cart.html';">
-      Checkout
-    </button>
+          <img  class="cinnamoncart" 
+                src="assets/products/original-cinnamon-roll.jpg" 
+                alt="Logo showing cinnamon roll">
+
+          <div class="remove">
+            <a href="">Remove</a>
+          </div>
+
+          <div class="cartdescription">
+            Original Cinnamon Roll<br>
+            Glazing: Keep original<br>
+            Pack Size: 1<br>
+            <br>
+            $ 2.49
+          </div>
+
+        </article>
+
+        <!-- second item in cart -->
+        <article>
+
+          <img  class="cinnamoncart" 
+                src="assets/products/double-chocolate-cinnamon-roll.jpg" 
+                alt="Image of double chocolate cinnamon roll">
+          
+          <div class="remove">
+            <a href="">Remove</a>
+          </div>
+
+          <div class="cartdescription">
+            Double Chocolate Cinnamon Roll<br>
+            Glazing: Sugar milk<br>
+            Pack Size: 6<br>
+            <br>
+            $ 2.49
+          </div>
+
+          <p class="solidcart"></p>
+
+          <div class="cartdescription">
+            Total: $ 29.94
+          </div>
+
+        </article>
+
+      </section>
+
+      <!-- checkout section -->
+      <section>
+
+        <button class="btn-chkout" 
+                onclick="window.location.href='./cart.html';">
+          Checkout
+        </button>
+
+      </section>
+
+    </main>
 
   </body>
+
 </html>

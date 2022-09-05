@@ -1,11 +1,9 @@
-.logo {
-    width: 400px;
-  }
-
+/* header divider */
 p.solid {
     border-style: solid;
   }
 
+/* cart divider, 900px long */
 p.solidcart {
     display: block;
     width: 900px;
@@ -13,25 +11,33 @@ p.solidcart {
     margin: 0px auto 35px auto;
   }
 
+/* remove link decorations */
 a:link { 
   text-decoration: none;
   color: black; 
 }
 
+/* remove link decorations */
 a:visited { 
   text-decoration: none; 
   color: black;
 }
 
+/* remove link decorations */
 a:hover { 
   text-decoration: none;
   color: black; 
 }
 
+/* remove link decorations */
 a:active { 
   text-decoration: none;
   color: black; 
 }
+
+.logo {
+    width: 400px;
+  }
 
 .products {
     text-align: center;
@@ -165,6 +171,7 @@ a:active {
     font-weight: 100;
   }
 
+/* button for cinnamon rolls in gallery */
 .btn-roll {
     display: block;
     width: 350px;
@@ -177,10 +184,12 @@ a:active {
     cursor: pointer;
   }
 
+/* hover for btn-roll button */
 .btn-roll:hover {
     background-color: #f3e62c;
   }
 
+/* drop down menu */
 .menus {
     display: block;
     width: 361.375px;
@@ -192,6 +201,7 @@ a:active {
 
 }
 
+/* button for adding cinnamon roll */
 .btn-add {
   display: block;
   border: 3px solid #000000;
@@ -204,10 +214,12 @@ a:active {
   cursor: pointer;
 }
 
+/* hover for btn-add button */
 .btn-add:hover {
   background-color: #f3e62c;
 }
 
+/* button for checkout */
 .btn-chkout {
   display: block;
   border: 3px solid #000000;
@@ -220,6 +232,7 @@ a:active {
   cursor: pointer;
 }
 
+/* hover for btn-chkout button */
 .btn-chkout:hover {
   background-color: #f3e62c;
 }

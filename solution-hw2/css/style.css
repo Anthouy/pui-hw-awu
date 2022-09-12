@@ -57,6 +57,7 @@ a:active {
 }
 
 .topsectionright {
+  align-content: stretch;
   flex-shrink: 0;
   width: 800px;
   margin-left: auto;

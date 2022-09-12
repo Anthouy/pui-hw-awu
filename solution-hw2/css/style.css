@@ -58,7 +58,7 @@ a:active {
 
 .topsectionright {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
   flex-shrink: 0;
   width: 800px;
   margin-left: auto;

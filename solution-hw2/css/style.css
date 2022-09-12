@@ -63,6 +63,10 @@ a:active {
   background-color: red;
 }
 
+.navigation {
+  display: flex;
+}
+
 .logo {
     width: 400px;
   }

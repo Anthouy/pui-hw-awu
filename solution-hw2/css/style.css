@@ -41,6 +41,19 @@ a:active {
   background-color: #000000;
 }
 
+.topsectionleft {
+  flex-grow: 1;
+  width: auto;
+  background-color: blue;
+}
+
+.topsectionright {
+  flex-shrink: 0;
+  width: 30px;
+  margin-left: auto;
+  background-color: red;
+}
+
 .logo {
     width: 400px;
   }

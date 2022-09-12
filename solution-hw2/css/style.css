@@ -65,6 +65,7 @@ a:active {
 
 .navigation {
   display: flex;
+  justify-content: flex-end;
 }
 
 .logo {

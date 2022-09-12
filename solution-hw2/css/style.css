@@ -58,7 +58,7 @@ a:active {
 
 .topsectionright {
   flex-shrink: 0;
-  width: 30px;
+  width: 800px;
   margin-left: auto;
   background-color: red;
 }

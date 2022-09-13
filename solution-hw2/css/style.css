@@ -6,6 +6,7 @@ p.solid {
 /* cart divider, 900px long */
 p.solidcart {
     display: block;
+    width: 784px;
     border-style: solid;
     margin: 0px auto 35px auto;
   }

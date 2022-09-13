@@ -50,6 +50,7 @@ a:active {
 .topsectionright {
   flex-grow: 1;
   margin-left: auto;
+  padding-left: 5%;
   min-width: 800;
   background-color: red;
 }

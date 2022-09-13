@@ -57,6 +57,7 @@ a:active {
   flex-shrink: 0;
   width: 750px;
   margin-left: auto;
+  align-content: space-between;
 }
 
 .navigation {

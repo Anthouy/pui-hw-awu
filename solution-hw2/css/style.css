@@ -66,8 +66,9 @@ a:active {
 
 .shoppingcartcontainer {
   display: flex;
-  width: 574.98px;
   justify-content: flex-end;
+  padding-right: 75px;
+
 }
 
 .logo {

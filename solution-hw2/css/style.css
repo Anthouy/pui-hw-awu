@@ -10,6 +10,7 @@ p.solidcart {
     width: 1217px;
     border-style: solid;
     margin: 0px 0px 35px auto;
+    padding: 0px 0px 0px auto;
   }
 
 /* remove link decorations */

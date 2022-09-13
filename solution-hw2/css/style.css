@@ -57,6 +57,7 @@ a:active {
 .navigation {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 25px;
 }
 
 .productcontainer {

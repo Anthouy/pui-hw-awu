@@ -9,8 +9,8 @@ p.solidcart {
     
     width: 1217px;
     border-style: solid;
-    margin: 0px 0px 35px auto;
-    padding: 0px 0px 0px auto;
+    margin: 0px 0px 35px 25%;
+    padding: 0px 0px 0px 0px;
   }
 
 /* remove link decorations */

@@ -68,8 +68,6 @@ a:active {
   display: flex;
   width: 784px;
   justify-content: flex-end;
-  padding-right: 75px;
-  gap: ;
 }
 
 .logo {

@@ -44,22 +44,17 @@ a:active {
 
   margin-left: auto;
   margin-right: auto;
-
-  border-radius: 8px;
-  background-color: #212121;
 }
 
 .topsectionleft {
   flex-grow: 1;
   width: auto;
-  background-color: blue;
 }
 
 .topsectionright {
   flex-shrink: 0;
   width: 800px;
   margin-left: auto;
-  background-color: red;
 }
 
 .navigation {

@@ -5,7 +5,7 @@ p.solid {
 
 /* cart divider, 900px long */
 p.solidcart {
-    display: block;
+    text-align: right;
     
     width: 25%;
     border-style: solid;

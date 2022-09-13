@@ -48,7 +48,6 @@ a:active {
 }
 
 .topsectionright {
-  display: flex;
   flex-grow: 1;
   margin-left: auto;
   min-width: 800;

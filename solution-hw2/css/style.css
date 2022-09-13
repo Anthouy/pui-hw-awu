@@ -6,6 +6,7 @@ p.solid {
 /* cart divider, 900px long */
 p.solidcart {
     display: block;
+    padding-left: 25%;
     
 
     border-style: solid;

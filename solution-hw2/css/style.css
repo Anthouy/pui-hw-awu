@@ -51,7 +51,6 @@ a:active {
   flex-grow: 1;
   margin-left: auto;
   padding-left: 2%;
-  padding-right: 2%;
   min-width: 800;
   background-color: red;
 }
@@ -60,6 +59,7 @@ a:active {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 45px;
+  padding-right: 50px;
   gap: 50px;
 }
 

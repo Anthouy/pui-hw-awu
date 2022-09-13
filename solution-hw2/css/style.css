@@ -44,7 +44,6 @@ a:active {
 }
 
 .topsectionleft {
-  background-color: blue;
 }
 
 .topsectionright {
@@ -52,7 +51,6 @@ a:active {
   margin-left: auto;
   padding-left: 2%;
   min-width: 800;
-  background-color: red;
 }
 
 .navigation {

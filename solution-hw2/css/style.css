@@ -59,6 +59,7 @@ a:active {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 45px;
+  gap: 50px;
 }
 
 .productcontainer {

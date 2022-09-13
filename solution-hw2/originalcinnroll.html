@@ -10,105 +10,122 @@
 
     <header>
 
-    <a href="./index.html">
-      <img  class="logo" 
-            src="assets/logo/logo-01.svg" 
-            alt="Logo showing cinnamon roll">
-    </a>
+      <div class="topsection">
 
-    <p class="solid"></p>
+        <div class="topsectionleft">
+          <!-- logo links to gallery -->
+          <a href="./index.html">
+            <img  class="logo" 
+                  src="assets/logo/logo-01.svg" 
+                  alt="Logo showing cinnamon roll">
+          </a>
+        </div>
 
-    </header>
+        <div class="topsectionright">
 
-    <nav>
+          <nav>
 
-      <div class="products">
-        <a href="./index.html">
-          <!-- make PRODUCTS highlighted in yellow when in gallery -->
-          <span style="background-color: #f3e62c">PRODUCTS</span>
-        </a>
+            <div class="navigation">
+
+              <div class="products">
+                <a href="./index.html">
+                  <!-- make PRODUCTS highlighted in yellow when in gallery -->
+                  <span style="background-color: #f3e62c">PRODUCTS</span>
+                </a>
+              </div>
+
+              <!-- link to cart -->
+              <div class="cart">
+                <a href="./cart.html">CART</a>
+              </div>
+
+            </div>
+
+          </nav>
+
+          <p class="solid"></p>
+
+          <h1 class="subtext">
+            Original cinnamon roll
+          </h1>
+          
+        </div>
+
       </div>
 
-      <div class="cart">
-        <a href="./cart.html">CART</a>
-      </div>
-
-    </nav>
+    </header> 
 
     <main>
+      
+      <div class="productcontainer">
 
-      <!-- title and image of original cinnamon roll -->
-      <section>
+        <img  class="cinnamondetail" 
+              src="assets/products/original-cinnamon-roll.jpg" 
+              alt="Image of original cinnamon roll">
 
-      <h1 class="subtext">
-        Original cinnamon roll
-      </h1>
+        <!-- customization section -->
+        <section>
 
-      <img  class="cinnamondetail" 
-            src="assets/products/original-cinnamon-roll.jpg" 
-            alt="Image of original cinnamon roll">
-
-      </section>
-
-      <!-- customization section -->
-      <section>
-
-        <div class="detailtextcontainer">
-          <h2 class="detailtext">
-          Customize our delicious,<br>hand-made cinnamon roll to<br>your liking!
-          </h2>
-        </div>
-
-        <!-- glazing selection -->
-        <article>
-
-          <div class="detailtextcontainer2">
-            <h3 class="detailtext">
-              Glazing:
-            </h3>
+          <div class="detailtextcontainer">
+            <h2 class="detailtext">
+            Customize our delicious,<br>hand-made cinnamon roll to<br>your liking!
+            </h2>
           </div>
 
-          <select class="menus" name="glazing">
-            <option value="first" selected>Keep original</option>
-            <option value="second">Sugar milk</option>
-            <option value="third">Vanilla milk</option>
-            <option value="fourth">Double chocolate</option>
-          </select>
+          <!-- glazing selection -->
+          <article>
 
-        </article>
+            <div class="detailtextcontainer2">
+              <h3 class="detailtext">
+                Glazing:
+              </h3>
+            </div>
 
-        <!-- size selection -->
-        <article>
+            <select class="menus" name="glazing">
+              <option value="first" selected>Keep original</option>
+              <option value="second">Sugar milk</option>
+              <option value="third">Vanilla milk</option>
+              <option value="fourth">Double chocolate</option>
+            </select>
 
-          <div class="detailtextcontainer2">
-            <h3 class="detailtext">
-              Pack size:
+          </article>
+
+          <!-- size selection -->
+          <article>
+
+            <div class="detailtextcontainer2">
+              <h3 class="detailtext">
+                Pack size:
+              </h3>
+            </div>
+
+            <select class="menus" name="size">
+              <option value="first" selected>1</option>
+              <option value="second">3</option>
+              <option value="third">6</option>
+              <option value="fourth">12</option>
+            </select>
+
+          </article>
+
+        </section>
+
+        <!-- add to cart section -->
+        <section>
+
+          <div class="detailtextcontainer3">
+            <h3 class="cinnamonpricebold">
+              $2.49
             </h3>
+            <button class="btn-add" 
+                    onclick="window.location.href='./cart.html';">
+              Add to Cart
+            </button>
           </div>
 
-          <select class="menus" name="size">
-            <option value="first" selected>1</option>
-            <option value="second">3</option>
-            <option value="third">6</option>
-            <option value="fourth">12</option>
-          </select>
+        </section>
 
-        </article>
-
-      </section>
-
-      <!-- add to cart section -->
-      <section>
-
-        <div class="detailtextcontainer3">
-          <h3 class="cinnamonpricebold">
-            $2.49
-          </h3>
-          <button class="btn-add" 
-                  onclick="window.location.href='./cart.html';">
-            Add to Cart
-          </button>
-        </div>
+      </div>
 
       </section>
 

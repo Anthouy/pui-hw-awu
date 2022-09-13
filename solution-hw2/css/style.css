@@ -50,6 +50,8 @@ a:active {
 }
 
 .topsectionright {
+  width: 750px;
+  margin-left: auto;
   background-color: red;
 }
 

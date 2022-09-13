@@ -66,6 +66,7 @@ a:active {
 
 .shoppingcartcontainer {
   display: flex;
+  width: 784;
   justify-content: flex-start;
   padding-left: 400px;
 }

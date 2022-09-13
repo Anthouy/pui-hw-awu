@@ -38,8 +38,6 @@ a:active {
 .topsection {
   display: flex;
 
-  box-sizing: border-box;
-
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;

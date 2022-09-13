@@ -62,7 +62,13 @@ a:active {
 .productcontainer {
   display: flex;
   flex-wrap: wrap;
-  
+}
+
+.shoppingcartcontainer {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .logo {

@@ -50,6 +50,7 @@ a:active {
 .topsectionleft {
   flex-grow: 1;
   width: auto;
+  background-color: blue;
 }
 
 .topsectionright {

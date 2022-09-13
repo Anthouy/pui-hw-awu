@@ -53,6 +53,7 @@ a:active {
 .navigation {
   display: flex;
   justify-content: flex-end;
+  padding-top: 45px;
   padding-right: 75px;
   gap: 75px;
 }

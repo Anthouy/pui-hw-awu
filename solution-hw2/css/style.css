@@ -68,8 +68,9 @@ a:active {
   justify-content: flex-end;
 }
 
-.prodcuctcontainer {
+.productcontainer {
   display: flex;
+  flex-wrap: wrap;
   
 }
 

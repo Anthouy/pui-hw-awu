@@ -54,6 +54,8 @@ a:active {
   display: flex;
   justify-content: flex-end;
   padding-right: 75px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   gap: 75px;
 }
 

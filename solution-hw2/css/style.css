@@ -102,7 +102,7 @@ a:active {
   }  
 
 .subtext {
-    text-align: left;
+    text-align: left bottom;
     margin: 0px 0px 0px 0px;
     color: #000000;
     font-size: 36px;

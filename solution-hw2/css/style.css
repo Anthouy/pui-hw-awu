@@ -54,7 +54,6 @@ a:active {
 }
 
 .topsectionright {
-  flex-shrink: 0;
   width: 750px;
   margin-left: auto;
   align-content: space-between;

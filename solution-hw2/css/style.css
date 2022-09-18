@@ -49,7 +49,7 @@ a:active {
   flex-grow: 1;
   margin-left: auto;
   padding-left: 2%;
-  min-width: 800;
+  min-width: 800px;
 }
 
 .navigation {

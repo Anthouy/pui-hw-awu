@@ -95,7 +95,6 @@ a:active {
 
 .cart {
     text-align: center;
-    
     margin: 15px;
     color: #000000;
     font-size: 24px;
@@ -104,6 +103,7 @@ a:active {
 
 .cartbold {
     text-align: center;
+    background-color: #f3e62c;
     margin: 15px;
     color: #000000;
     font-size: 24px;

@@ -46,7 +46,7 @@ a:active {
 }
 
 .topsectionright {
-  flex-grow: ;
+  flex-grow: 1;
   margin-left: auto;
   padding-left: 2%;
   min-width: 800px;

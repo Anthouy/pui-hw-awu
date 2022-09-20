@@ -15,7 +15,6 @@ p.solidcart {
 
 /* remove link decorations */
 a:link { 
-  text-decoration:;
   color: black; 
 }
 
@@ -27,7 +26,6 @@ a:visited {
 
 /* remove link decorations */
 a:hover { 
-  text-decoration: none;
   color: black; 
 }
 

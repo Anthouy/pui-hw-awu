@@ -59,4 +59,4 @@ let selectElement = document.querySelector('.menu')
 
 selectElement.addEventListener('change', onSelectValueChange);
 
-displayCinnamon(allGlazing[0]);
+updateGlaze(allGlazing[0]);

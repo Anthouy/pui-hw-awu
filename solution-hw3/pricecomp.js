@@ -8,7 +8,20 @@ let allCinnamon =
         ValueD: 'Double chocolate',
     };
 
-let select = document.getElementById("glazing")
+let selectGlaze = document.getElementById("glazing")
 for(index in allCinnamon) {
-    select.options[select.options.length] = new Option(allCinnamon[index], index);
+    selectGlaze.options[selectGlaze.options.length] = new Option(allCinnamon[index], index);
+}
+
+let allSize =
+    {
+        ValueA: '1',
+        ValueB: '3',
+        ValueC: '6',
+        ValueD: '12',
+    };
+
+let selectSize = document.getElementById("packsize")
+for(index in allSize) {
+    selectSize.options[selectSize.options.length] = new Option(allSize[index], index);
 }

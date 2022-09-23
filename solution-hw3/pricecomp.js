@@ -12,5 +12,5 @@ let allCinnamon =
 
 let element = document.getElementById("glazing");
 for(index in allCimnamon) {
-    select.options[select.options.length] = new Option(allCinnamon[index], index);
+    element.options[element.options.length] = new Option(allCinnamon[index], index);
 }

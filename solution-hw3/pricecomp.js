@@ -21,7 +21,7 @@ let allCinnamon = [
 
 function displayCinnamon(cinnamon) {
     console.log("Running update")
-    let cinnamonTitleElement = document.querySelector('.cinnamonpricebold');
+    let cinnamonTitleElement = document.querySelector('');
     let cinnamonInfoElement = document.querySelector('.cinnamonpricebold');
 
     cinnamonTitleElement.innerText = cinnamon.glazing;

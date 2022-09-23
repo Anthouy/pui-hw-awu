@@ -57,6 +57,6 @@ function onSelectValueChange() {
 
 let selectElement = document.querySelector('#glazing')
 
-selectElement.addEventListener('change', onSelectValueChange)
+selectElement.addEventListener('change', onSelectValueChange);
 
 displayCinnamon(allGlazing[0]);

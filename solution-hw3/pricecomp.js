@@ -24,7 +24,4 @@ for(index in allSize) {
 
 function glazingChange(element) {
     document.getElementById("glazing").innerHTML = allCinnamon.priceadd
-    console.log(allCinnamon.priceadd)
 }
-
-glazingChange()

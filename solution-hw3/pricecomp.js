@@ -1,5 +1,7 @@
 console.log("Check1");
 
+let select = document.getElementById("glazing")
+
 let allCinnamon = [
     "Keep original",
     "Sugar milk",

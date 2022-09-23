@@ -27,5 +27,3 @@ function glazingChange(element) {
     const priceChange = element.value + 2.49;
     return("The price is " + priceChange)
 }
-
-function packChange()

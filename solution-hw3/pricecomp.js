@@ -1,12 +1,10 @@
 console.log("Check1");
 
-let allCinnamon =
-    {
-        0: 'Keep original',
-        0.00: 'Sugar milk',
-        0.50: 'Vanilla milk',
-        1.50: 'Double chocolate',
-    };
+let allCinnamon = [];
+allCinnamon[0] = 0, 'Keep original';
+allCinnamon[1] = 0, 'Sugar milk';
+allCinnamon[2] = 0.50, 'Vanilla milk';
+allCinnamon[3] = 1.50, 'Double chocolate';
 
 let selectGlaze = document.getElementById("glazing")
 for(index in allCinnamon) {

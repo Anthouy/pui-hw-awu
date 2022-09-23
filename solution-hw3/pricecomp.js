@@ -19,32 +19,13 @@ let allCinnamon = [
     },
 ];
 
-let allSize = [
-    {
-        glazing: '1',
-        price: '1',
-    },
-    {
-        glazing: '3',
-        price: '3',
-    },
-    {
-        glazing: '6',
-        price: '5',
-    },
-    {
-        glazing: '12',
-        price: '10',
-    },
-];
-
 function displayCinnamon(cinnamon) {
     console.log("Running update")
-    let cinnamonGlazingElement = document.querySelector('.cinnamonpricebold');
-    let cinnamonPriceElement = document.querySelector('.cinnamonpricebold');
+    let cinnamonTitleElement = document.querySelector('.cinnamonpricebold');
+    let cinnamonInfoElement = document.querySelector('.cinnamonpricebold');
 
-    cinnamonGlazingElement.innerText = cinnamon.glazing;
-    cinnamonPriceElement.innetText = cinnamon.price;
+    cinnamonTitleElement.innerText = cinnamon.glazing;
+    cinnamonInfoElement.innetText = cinnamon.price;
 }
 
 function onSelectValueChange() {

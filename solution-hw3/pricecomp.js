@@ -20,6 +20,12 @@ let allCinnamon = [
 ];
 
 function glazingChange() {
-    allCinnamon.push(newCinnamon);
-    
+    for (let i = 0; i < PushSubscriptionOptions.length; i++) {
+        let opt = options[i];
+        let el = document.createElement("option");
+        el.textContent = opt
+        el.value = opt;
+        Selection.appendChild(el);
+    }
+
 }

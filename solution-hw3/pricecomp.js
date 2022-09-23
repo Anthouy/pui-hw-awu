@@ -4,10 +4,10 @@ let select = document.getElementById("glazing")
 
 let allCinnamon =
     {
-        'Keep original': '0.00',
-        'Sugar milk': '0.00',
-        'Vanilla milk': '0.50',
-        'Double chocolate': '1.50',
+        0.00: 'Keep original',
+        0.00: 'Sugar milk',
+        0.50: 'Vanilla milk',
+        1.50: 'Double chocolate',
     };
 
 let element = document.getElementById("glazing");

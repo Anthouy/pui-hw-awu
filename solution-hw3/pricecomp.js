@@ -4,30 +4,14 @@ let select = document.getElementById("glazing")
 
 let allCinnamon = [
     {
-        "1": {
-                glazing: 'Keep original',
-                priceadapt: '0.00',
-            }
-    },
-    {
-        "2": {
-            glazing: 'Sugar milk',
-            priceadapt: '0.00',
-        }
-    },
-    {
-        "3": {
-            glazing: 'Vanilla milk',
-            priceadapt: '0.50',
-        }
-    },
-    {
-        "4": {
-            glazing: 'Double chocolate',
-            priceadapt: '1.50',
-        }
-    },
+        'Keep original': '0.00',
+        'Sugar milk': '0.00',
+        'Vanilla milk': '0.50',
+        'Double chocolate': '1.50',
+    }
 ]
 
 let element = document.getElementById("glazing");
-select.options[select.options.length] = new Option('Text 1', 'Value1');
+for(index in allCimnamon) {
+    select.options[select.options.length] = new Option(allCinnamon[index], index);
+}

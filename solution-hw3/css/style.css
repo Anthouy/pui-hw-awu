@@ -243,7 +243,26 @@ a:active {
     margin: 5px auto 5px auto;
     font-size: 32px;
     font-weight: 100;
+}
 
+#glazing {
+  display: block;
+  width: 361.375px;
+  height: fit-content;
+  border: 3px solid #000000;
+  margin: 5px auto 5px auto;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+#packsize {
+  display: block;
+  width: 361.375px;
+  height: fit-content;
+  border: 3px solid #000000;
+  margin: 5px auto 5px auto;
+  font-size: 32px;
+  font-weight: 100;
 }
 
 /* button for adding cinnamon roll */

@@ -22,7 +22,7 @@ for(index in allSize) {
     selectSize.options[selectSize.options.length] = new Option(allSize[index].cinnCount);
 }
 
-function glazingChange() {
+function glazingChange(price) {
     let element = allCinnamon[index].priceadd;
     const priceChange = element + 2.49;
     return("The price is " + priceChange);

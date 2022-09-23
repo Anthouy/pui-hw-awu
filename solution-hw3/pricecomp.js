@@ -30,4 +30,4 @@ let allCinnamon = [
 ]
 
 let element = document.getElementById("glazing");
-select.options[select.options.length] = new Option('Text', 'Value1', 'options2');
+select.options[select.options.length] = new Option('Text 1', 'Value1');

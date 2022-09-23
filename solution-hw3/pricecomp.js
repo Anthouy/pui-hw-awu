@@ -24,5 +24,9 @@ for(index in allSize) {
 
 function glazingChange(element) {
     document.getElementById("glazing").innerHTML = allCinnamon[index].priceadd
+    const priceChange = element.value + 2.49;
+
     console.log(allCinnamon[2].priceadd)
+
+
 }

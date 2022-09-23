@@ -8,7 +8,7 @@ allCinnamon[3] = 1.50, 'Double chocolate';
 
 let selectGlaze = document.getElementById("glazing")
 for(index in allCinnamon) {
-    selectGlaze.options[selectGlaze.options.length] = new Option(allCinnamon[index], index);
+    selectGlaze.options[selectGlaze.options.length] = new Option(allCinnamon[index], index, index);
 }
 
 let allSize =

@@ -1,6 +1,6 @@
 console.log("Check1");
 
-let allGlazing = [
+let allCinnamon = [
     {
         glazing: 'Keep original',
         price: '2.49',
@@ -38,7 +38,7 @@ let allSize = [
     },
 ];
 
-function updateGlaze(cinnamon) {
+function displayCinnamon(cinnamon) {
     console.log("Running update")
     let cinnamonGlazingElement = document.querySelector('#cinnamonpricebold');
 
@@ -50,13 +50,13 @@ function onSelectValueChange() {
 
     let cinnamonIndex = parseInt(this.value);
 
-    let cinnamonToDisplay = allGlazing[cinnamonIndex];
+    let cinnamonToDisplay = allCinnamon[cinnamonIndex];
 
     displayCinnamon(cinnamonToDisplay);
 }
 
-let selectElement = document.querySelector('.menu')
+let selectElement = document.querySelector('#menu')
 
 selectElement.addEventListener('change', onSelectValueChange);
 
-updateGlaze(allGlazing[0]);
+displayCinnamon(allCinnamon[0]);

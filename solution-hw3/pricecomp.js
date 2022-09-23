@@ -1,7 +1,5 @@
 console.log("Check1");
 
-let select = document.getElementById("glazing")
-
 let allCinnamon =
     {
         ValueA: 'Keep original',
@@ -10,7 +8,7 @@ let allCinnamon =
         ValueD: 'Double chocolate',
     };
 
-let element = document.getElementById("glazing");
+let select = document.getElementById("glazing")
 for(index in allCimnamon) {
-    element.options[element.options.length] = new Option(allCinnamon[index], index);
+    select.options[select.options.length] = new Option(allCinnamon[index], index);
 }

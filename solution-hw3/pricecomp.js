@@ -21,3 +21,9 @@ let selectSize = document.getElementById("packsize")
 for(index in allSize) {
     selectSize.options[selectSize.options.length] = new Option(allSize[index].cinnCount);
 }
+
+function glazingChange(element) {
+    let element = allCinnamon[index].priceadd;
+    const priceChange = element.value + 2.49;
+    return("The price is " + priceChange)
+}

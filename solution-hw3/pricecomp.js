@@ -11,17 +11,15 @@ for(index in allCinnamon) {
     selectGlaze.options[selectGlaze.options.length] = new Option(allCinnamon[index].glazetype);
 }
 
-let allSize =
-    {
-        1: '1',
-        3: '3',
-        5: '6',
-        10: '12',
-    };
+let allSize = [];
+allSize[0] = {priceMult: 1, cinnCount: '1'};
+allSize[1] = {priceMult: 3, cinnCount: '3'};
+allSize[2] = {priceMult: 5, cinnCount: '6'};
+allSize[3] = {priceMult: 10, cinnCount: '12'};
 
 let selectSize = document.getElementById("packsize")
 for(index in allSize) {
-    selectSize.options[selectSize.options.length] = new Option(allSize[index], index);
+    selectSize.options[selectSize.options.length] = new Option(allSize[index].cinnCount);
 }
 
 function glazingChange(element) {

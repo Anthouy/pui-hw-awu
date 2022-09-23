@@ -18,6 +18,11 @@ let allCinnamon = [
         price: '3.99',
     },
 ];
+/**
+ * 
+ * @param cinnamon
+ */
+
 
 function displayCinnamon(cinnamon) {
     console.log("Running update")

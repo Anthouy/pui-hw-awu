@@ -55,7 +55,7 @@ function onSelectValueChange() {
     displayCinnamon(cinnamonToDisplay);
 }
 
-let selectElement = document.querySelector('#glazing')
+let selectElement = document.querySelector('.menu')
 
 selectElement.addEventListener('change', onSelectValueChange);
 

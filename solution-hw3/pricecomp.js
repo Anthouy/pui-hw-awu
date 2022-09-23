@@ -23,6 +23,6 @@ for(index in allSize) {
 }
 
 function glazingChange(element) {
-    document.getElementById("glazing").innerHTML = allCinnamon[index].priceadd
-    console.log(allCinnamon[3].priceadd)
+    let cinnamoncurrentprice = allCinnamon.priceadd + 2.49;
+    console.log(cinnamoncurrentprice);
 }

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <header>
+
+      <div class="topsection">
+
+        <div class="topsectionleft">
+          <!-- logo links to gallery -->
+          <a href="./index.html">
+            <img  class="logo" 
+                  src="assets/logo/logo-01.svg" 
+                  alt="Logo showing cinnamon roll">
+          </a>
+        </div>
+
+        <div class="topsectionright">
+
+          <nav>
+
+            <div class="navigation">
+
+              <div class="products">
+                <a href="./index.html">
+                  <!-- make PRODUCTS highlighted in yellow when in gallery -->
+                  PRODUCTS
+                </a>
+              </div>
+
+              <!-- link to cart -->
+              <div class="cart">
+                <a href="./cart.html">CART</a>
+              </div>
+
+            </div>
+
+          </nav>
+
+          <p class="solid"></p>
+
+          <h1 class="subtext">
+            Original cinnamon roll
+          </h1>
+          
+        </div>
+
+      </div>
+
+    </header> 
+
+    <main>
+      
+      <div class="productcontainer">
+
+        <img  class="cinnamondetail" 
+              src="assets/products/original-cinnamon-roll.jpg" 
+              alt="Image of original cinnamon roll">
+
+        <div class="topsectionright">
+
+          <!-- customization section -->
+          <section>
+
+            <div class="detailtextcontainer">
+              <h2 class="detailtext">
+              Customize our delicious,<br>hand-made cinnamon roll to<br>your liking!
+              </h2>
+            </div>
+
+            <!-- glazing selection -->
+            <article>
+
+              <div class="detailtextcontainer2">
+                <h3 class="detailtext">
+                  Glazing:
+                </h3>
+              </div>
+
+              <select class="menus" name="glazing">
+                <option value="first" selected>Keep original</option>
+                <option value="second">Sugar milk</option>
+                <option value="third">Vanilla milk</option>
+                <option value="fourth">Double chocolate</option>
+              </select>
+
+            </article>
+
+            <!-- size selection -->
+            <article>
+
+              <div class="detailtextcontainer2">
+                <h3 class="detailtext">
+                  Pack size:
+                </h3>
+              </div>
+
+              <select class="menus" name="size">
+                <option value="first" selected>1</option>
+                <option value="second">3</option>
+                <option value="third">6</option>
+                <option value="fourth">12</option>
+              </select>
+
+            </article>
+
+          </section>
+
+          <!-- add to cart section -->
+          <section>
+
+            <div class="detailtextcontainer3">
+              <h3 class="cinnamonpricebold">
+                $2.49
+              </h3>
+              <button class="btn-add" 
+                      onclick="window.location.href='./cart.html';">
+                Add to Cart
+              </button>
+            </div>
+
+          </section>
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </body>
+
+</html>

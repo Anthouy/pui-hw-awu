@@ -15,13 +15,17 @@ for(index in allCinnamon) {
 
 let allSize =
     {
-        ValueA: '1',
-        ValueB: '3',
-        ValueC: '6',
-        ValueD: '12',
+        1: '1',
+        3: '3',
+        5: '6',
+        10: '12',
     };
 
 let selectSize = document.getElementById("packsize")
 for(index in allSize) {
     selectSize.options[selectSize.options.length] = new Option(allSize[index], index);
+}
+
+function glazingChange(element) {
+
 }

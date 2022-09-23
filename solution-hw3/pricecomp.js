@@ -23,6 +23,7 @@ for(index in allSize) {
 }
 
 function glazingChange(element) {
-    let cinnamoncurrentprice = allCinnamon[index].priceadd;
-    return cinnamoncurrentprice + 2.49;
+    let cinnamonpriceaddition = allCinnamon[index].priceadd;
+    let cinnglazingprice = cinnamonpriceaddition + 2.49
+    return cinnglazingprice
 }

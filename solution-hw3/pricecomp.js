@@ -41,8 +41,10 @@ let allSize = [
 function displayCinnamon(cinnamon) {
     console.log("Running update")
     let cinnamonGlazingElement = document.querySelector('#cinnamonpricebold');
+    let cinnamonPriceElement = document.querySelector('#cinnamonpricebold');
 
-    cinnamonGlazingElement = cinnamon.glazing;
+    cinnamonGlazingElement.innerText = cinnamon.glazing;
+    cinnamonPriceElement.innetText = cinnamon.price;
 }
 
 function onSelectValueChange() {

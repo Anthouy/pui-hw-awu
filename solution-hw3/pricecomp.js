@@ -38,7 +38,7 @@ let allSize = [
     },
 ];
 
-function updateGlaze() {
+function updateGlaze(cinnamon) {
     console.log("Running update")
     let cinnamonGlazingElement = document.querySelector('#cinnamonpricebold');
 

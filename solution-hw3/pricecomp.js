@@ -21,4 +21,5 @@ let allCinnamon = [
 
 function glazingChange() {
     allCinnamon.push(newCinnamon);
+    
 }

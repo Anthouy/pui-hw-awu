@@ -29,5 +29,5 @@ let allCinnamon = [
     },
 ]
 
-let select = document.getElementById("gzing");
+var select = document.getElementById("gzing");
 select.options[select.options.length] = new Option('Text 1', 'Value1');

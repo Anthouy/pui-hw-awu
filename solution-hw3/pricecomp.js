@@ -23,7 +23,7 @@ for(index in allSize) {
     console.log("Populating Menus")
 }
 
-let glazing = 2.49;
+let glazing = 0;
 let amount = 1;
 document.getElementById("glazing").addEventListener("change", calculatePrice);
 document.getElementById("packsize").addEventListener("change", calculatePrice);

@@ -36,5 +36,5 @@ function packChange(element) {
 
 function calculatePrice() {
     x = (2.49 + glazing) * amount;
-    return x
+    return x;
 }

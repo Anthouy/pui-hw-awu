@@ -1,4 +1,4 @@
-console.log("Check1");
+console.log("Load Check");
 
 let allCinnamon = [];
 allCinnamon[0] = {priceadd: 0, glazetype: 'Keep original'};
@@ -9,6 +9,7 @@ allCinnamon[3] = {priceadd: 1.50, glazetype: 'Double chocolate'};
 let selectGlaze = document.getElementById("glazing")
 for(index in allCinnamon) {
     selectGlaze.options[selectGlaze.options.length] = new Option(allCinnamon[index].glazetype);
+    console.log("Populating Glazing Menu");
 }
 
 let allSize = [];
@@ -20,13 +21,14 @@ allSize[3] = {priceMult: 10, cinnCount: '12'};
 let selectSize = document.getElementById("packsize")
 for(index in allSize) {
     selectSize.options[selectSize.options.length] = new Option(allSize[index].cinnCount);
-    console.log("Populating Menus")
+    console.log("Populating Pack Size Menu")
 }
 
 let glazing = 0;
 let amount = 1;
 document.getElementById("glazing").addEventListener("change", calculatePrice);
 document.getElementById("packsize").addEventListener("change", calculatePrice);
+console.log("Initialize Final Price on Next Click");
 
 function glazingChange() {
     let x = document.getElementById("glazing").value;

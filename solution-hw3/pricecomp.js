@@ -73,6 +73,7 @@ function packChange() {
 
 function calculatePrice() {
     x = (2.49 + glazing) * amount;
-    document.getElementById("totalcost").innerHTML = x;
-    console.log(x)
+    y = x * amount;
+    document.getElementById("totalcost").innerHTML = y;
+    console.log(y)
 }

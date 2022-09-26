@@ -28,7 +28,10 @@ let amount = 0;
 
 function glazingChange() {
     let x = document.getElementById("glazing").value;
-
+    if (x = 'Vanilla milk') {
+        glazing = allCinnamon[2].priceadd
+        console.log(glazing)
+    }
     document.getElementById("totalcost").innerHTML = x;
 }
 

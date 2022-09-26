@@ -28,6 +28,7 @@ let amount = 0;
 
 function glazingChange() {
     let x = document.getElementById("glazing").value;
+
     document.getElementById("totalcost").innerHTML = x;
 }
 
@@ -39,4 +40,8 @@ function packChange() {
 function calculatePrice() {
     x = (2.49 + glazing) * amount;
     return x, glazing, amount;
+}
+
+function testingarrayaccess() {
+    return allCinnamon[1].priceadd
 }

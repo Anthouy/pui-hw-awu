@@ -27,11 +27,13 @@ let glazing = 0;
 let amount = 0;
 
 function glazingChange(element) {
-    glazing = element
+    let x = document.getElementById("glazing").value;
+    return "x"
 }
 
 function packChange(element) {
-    amount = element
+    let x = document.getElementById("packsize").value;
+    return "x"
 }
 
 function calculatePrice() {

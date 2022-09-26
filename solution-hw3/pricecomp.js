@@ -25,6 +25,8 @@ for(index in allSize) {
 
 let glazing = 2.49;
 let amount = 1;
+document.getElementById("glazing").addEventListener("change", calculatePrice);
+document.getElementById("packsize").addEventListener("change", calculatePrice);
 
 function glazingChange() {
     let x = document.getElementById("glazing").value;

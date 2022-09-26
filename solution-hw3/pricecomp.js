@@ -27,13 +27,14 @@ let glazing = 0;
 let amount = 0;
 
 function glazingChange() {
-    let element = document.getElementById("glazing").value;
-    return "element";
+    let x = document.getElementById("glazing").value;
+    document.getElementById("totalcost").innerHTML = "You selected: " + x;
+    return "x";
 }
 
 function packChange() {
-    let element = document.getElementById("packsize").value;
-    return "element";
+    let x = document.getElementById("packsize").value;
+    return "x";
 }
 
 function calculatePrice() {

@@ -33,7 +33,7 @@ function glazingChange() {
 
 function packChange() {
     let x = document.getElementById("packsize").value;
-    return "x";
+    document.getElementById("totalcost").innerHTML = x;
 }
 
 function calculatePrice() {

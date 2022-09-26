@@ -28,12 +28,12 @@ let amount = 0;
 
 function glazingChange() {
     let element = document.getElementById("glazing").value;
-    return "element"
+    return "element";
 }
 
 function packChange() {
     let element = document.getElementById("packsize").value;
-    return "element"
+    return "element";
 }
 
 function calculatePrice() {

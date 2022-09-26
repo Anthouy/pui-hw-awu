@@ -28,8 +28,7 @@ let amount = 0;
 
 function glazingChange() {
     let x = document.getElementById("glazing").value;
-    document.getElementById("totalcost").innerHTML = "You selected: " + x;
-    return "x";
+    document.getElementById("totalcost").innerHTML = x;
 }
 
 function packChange() {

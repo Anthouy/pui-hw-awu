@@ -1,35 +1,41 @@
 console.log("Load Check");
 
+// Array of cinnamon glazing options and price adjustments.
 let allCinnamon = [];
 allCinnamon[0] = {priceadd: 0, glazetype: 'Keep original'};
 allCinnamon[1] = {priceadd: 0, glazetype: 'Sugar milk'};
 allCinnamon[2] = {priceadd: 0.50, glazetype: 'Vanilla milk'};
 allCinnamon[3] = {priceadd: 1.50, glazetype: 'Double chocolate'};
 
+// Loop to populate glazing menu.
 let selectGlaze = document.getElementById("glazing")
 for(index in allCinnamon) {
     selectGlaze.options[selectGlaze.options.length] = new Option(allCinnamon[index].glazetype);
     console.log("Populating Glazing Menu");
 }
 
+// Array of pack size options and price adjustments.
 let allSize = [];
 allSize[0] = {priceMult: 1, cinnCount: '1'};
 allSize[1] = {priceMult: 3, cinnCount: '3'};
 allSize[2] = {priceMult: 5, cinnCount: '6'};
 allSize[3] = {priceMult: 10, cinnCount: '12'};
 
+// Loop to populate pack size menu.
 let selectSize = document.getElementById("packsize")
 for(index in allSize) {
     selectSize.options[selectSize.options.length] = new Option(allSize[index].cinnCount);
     console.log("Populating Pack Size Menu")
 }
 
+// Initial global variables for price calculation.
 let glazing = 0;
 let amount = 1;
 document.getElementById("glazing").addEventListener("change", calculatePrice);
 document.getElementById("packsize").addEventListener("change", calculatePrice);
 console.log("Initialize Final Price on Next Click");
 
+// Function for detecting change.
 function glazingChange() {
     let x = document.getElementById("glazing").value;
         if (x == allCinnamon[2].glazetype) {
@@ -58,6 +64,7 @@ function glazingChange() {
         }
 }
 
+// Function for detecting change.
 function packChange() {
     let x = document.getElementById("packsize").value;
         if (x == allSize[1].cinnCount) {
@@ -86,6 +93,7 @@ function packChange() {
         }
 }
 
+// Calculation function.
 function calculatePrice() {
     x = 2.49 + glazing;
     y = x * amount;

@@ -28,6 +28,7 @@ let amount = 1;
 
 function glazingChange() {
     let x = document.getElementById("glazing").value;
+    document.getElementById("glazing").addEventListener("change", calculatePrice);
         if (x == allCinnamon[2].glazetype) {
             glazing = allCinnamon[2].priceadd
             console.log(glazing)
@@ -56,6 +57,7 @@ function glazingChange() {
 
 function packChange() {
     let x = document.getElementById("packsize").value;
+    document.getElementById("packsize").addEventListener("change", calculatePrice);
         if (x == allSize[1].cinnCount) {
             amount = allSize[1].priceMult
             console.log(amount)

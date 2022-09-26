@@ -33,6 +33,7 @@ function glazingChange() {
         console.log(glazing)
     }
     document.getElementById("totalcost").innerHTML = x;
+    console.log(x)
 }
 
 function packChange() {

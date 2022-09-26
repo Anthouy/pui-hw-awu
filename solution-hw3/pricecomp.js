@@ -48,6 +48,21 @@ function glazingChange() {
 
 function packChange() {
     let x = document.getElementById("packsize").value;
+        if (x == allSize[1].cinnCount) {
+            amount = allSize[1].priceMult
+            console.log(amount)
+            console.log(x)
+        }
+        else if (x == allSize[2].cinnCount) {
+            amount = allSize[2].priceMult
+            console.log(amount)
+            console.log(x)
+        }
+        else {
+            amount = allSize[3].priceMult
+            console.log(amount)
+            console.log(x)
+        }
     document.getElementById("totalcost").innerHTML = x;
 }
 

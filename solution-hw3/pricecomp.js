@@ -43,5 +43,5 @@ function calculatePrice() {
 }
 
 function testingarrayaccess() {
-    return allCinnamon[1].priceadd
+    return allCinnamon[2].priceadd
 }

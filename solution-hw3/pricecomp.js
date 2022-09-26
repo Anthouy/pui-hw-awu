@@ -23,8 +23,8 @@ for(index in allSize) {
     console.log("Populating Menus")
 }
 
-let glazing = 0;
-let amount = 0;
+let glazing = 2.49;
+let amount = 1;
 
 function glazingChange() {
     let x = document.getElementById("glazing").value;
@@ -43,7 +43,7 @@ function glazingChange() {
             console.log(glazing)
             console.log(x)
         }
-    document.getElementById("totalcost").innerHTML = x;
+    document.getElementById("packsize").addEventListener("change", calculatePrice);
 }
 
 function packChange() {
@@ -68,14 +68,11 @@ function packChange() {
             console.log(amount)
             console.log(x)
         }
-    document.getElementById("totalcost").innerHTML = x;
+    document.getElementById("packsize").addEventListener("change", calculatePrice);
 }
 
 function calculatePrice() {
     x = (2.49 + glazing) * amount;
-    return x, glazing, amount;
-}
-
-function testingarrayaccess() {
-    return allCinnamon[2].priceadd
+    document.getElementById("totalcost").innerHTML = x;
+    console.log(x)
 }

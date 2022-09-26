@@ -40,6 +40,12 @@ function glazingChange() {
             console.log(x)
             document.getElementById("glazing").addEventListener("change", calculatePrice);
         }
+        else if (x == allCinnamon[1].glazetype) {
+            glazing = allCinnamon[1].priceadd
+            console.log(glazing)
+            console.log(x)
+            document.getElementById("glazing").addEventListener("change", calculatePrice);
+        }
         else {
             glazing = allCinnamon[0].priceadd
             console.log(glazing)

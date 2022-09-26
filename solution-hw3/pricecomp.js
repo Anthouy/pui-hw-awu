@@ -33,6 +33,16 @@ function glazingChange() {
             console.log(glazing)
             console.log(x)
         }
+        else if (x == allCinnamon[3].glazetype) {
+            glazing = allCinnamon[3].priceadd
+            console.log(glazing)
+            console.log(x)
+        }
+        else {
+            glazing = allCinnamon[0].priceadd
+            console.log(glazing)
+            console.log(x)
+        }
     document.getElementById("totalcost").innerHTML = x;
 }
 

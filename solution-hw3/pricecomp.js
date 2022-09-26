@@ -20,10 +20,21 @@ allSize[3] = {priceMult: 10, cinnCount: '12'};
 let selectSize = document.getElementById("packsize")
 for(index in allSize) {
     selectSize.options[selectSize.options.length] = new Option(allSize[index].cinnCount);
+    console.log("Populating Menus")
 }
 
-function glazingChange(price) {
-    let element = allCinnamon[index].priceadd;
-    const priceChange = element + 2.49;
-    return("The price is " + priceChange);
+let glazing = 0;
+let amount = 0;
+
+function glazingChange(element) {
+    glazing = element
+}
+
+function packChange(element) {
+    amount = element
+}
+
+function calculatePrice() {
+    x = (2.49 + glazing) * amount;
+    return x
 }

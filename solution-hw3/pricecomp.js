@@ -26,12 +26,12 @@ for(index in allSize) {
 let glazing = 0;
 let amount = 0;
 
-function glazingChange(element) {
+function glazingChange() {
     let element = document.getElementById("glazing").value;
     return "element"
 }
 
-function packChange(element) {
+function packChange() {
     let element = document.getElementById("packsize").value;
     return "element"
 }

@@ -58,8 +58,13 @@ function packChange() {
             console.log(amount)
             console.log(x)
         }
-        else {
+        else if (x == allSize[3].cinnCount) {
             amount = allSize[3].priceMult
+            console.log(amount)
+            console.log(x)
+        }
+        else {
+            amount = allSize[0].priceMult
             console.log(amount)
             console.log(x)
         }

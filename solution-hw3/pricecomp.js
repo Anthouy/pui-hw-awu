@@ -32,18 +32,21 @@ function glazingChange() {
             glazing = allCinnamon[2].priceadd
             console.log(glazing)
             console.log(x)
+            document.getElementById("glazing").addEventListener("change", calculatePrice);
         }
         else if (x == allCinnamon[3].glazetype) {
             glazing = allCinnamon[3].priceadd
             console.log(glazing)
             console.log(x)
+            document.getElementById("glazing").addEventListener("change", calculatePrice);
         }
         else {
             glazing = allCinnamon[0].priceadd
             console.log(glazing)
             console.log(x)
+            document.getElementById("glazing").addEventListener("change", calculatePrice);
         }
-    document.getElementById("packsize").addEventListener("change", calculatePrice);
+    document.getElementById("glazing").addEventListener("change", calculatePrice);
 }
 
 function packChange() {
@@ -52,21 +55,25 @@ function packChange() {
             amount = allSize[1].priceMult
             console.log(amount)
             console.log(x)
+            document.getElementById("packsize").addEventListener("change", calculatePrice);
         }
         else if (x == allSize[2].cinnCount) {
             amount = allSize[2].priceMult
             console.log(amount)
             console.log(x)
+            document.getElementById("packsize").addEventListener("change", calculatePrice);
         }
         else if (x == allSize[3].cinnCount) {
             amount = allSize[3].priceMult
             console.log(amount)
             console.log(x)
+            document.getElementById("packsize").addEventListener("change", calculatePrice);
         }
         else {
             amount = allSize[0].priceMult
             console.log(amount)
             console.log(x)
+            document.getElementById("packsize").addEventListener("change", calculatePrice);
         }
     document.getElementById("packsize").addEventListener("change", calculatePrice);
 }

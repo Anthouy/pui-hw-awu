@@ -52,7 +52,6 @@ function glazingChange() {
             console.log(x)
             document.getElementById("glazing").addEventListener("change", calculatePrice);
         }
-    document.getElementById("glazing").addEventListener("change", calculatePrice);
 }
 
 function packChange() {
@@ -81,7 +80,6 @@ function packChange() {
             console.log(x)
             document.getElementById("packsize").addEventListener("change", calculatePrice);
         }
-    document.getElementById("packsize").addEventListener("change", calculatePrice);
 }
 
 function calculatePrice() {

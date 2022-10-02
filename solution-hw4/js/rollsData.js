@@ -1,3 +1,5 @@
+console.log("rollsData Load Check");
+
 const rolls = {
     "Original": {
         "basePrice": 2.49,
@@ -36,3 +38,10 @@ function testing() {
     console.log(params)
     console.log(rollType)
 }
+
+function updateDetail() {
+
+}
+
+let heading = document.querySelector('.subtext')
+myElement.innerHTML = "rollType + 'Cinnamon Roll'"

@@ -37,7 +37,8 @@ function testing() {
     console.log(queryString)
     console.log(params)
     console.log(rollType)
-    console.log(rolls[1].basePrice)
+    let rollsprice = rolls[1].basePrice
+    console.log(rollsprice)
 }
 
 function updateDetail() {

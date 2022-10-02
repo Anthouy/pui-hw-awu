@@ -38,7 +38,7 @@ function testing() {
     console.log(params)
     console.log(rollType)
     let baserollsprice = rolls[rollType].basePrice
-    console.log(rollsprice)
+    console.log(baserollsprice)
 }
 
 function updateDetail() {

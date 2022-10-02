@@ -46,5 +46,6 @@ function updateDetail() {
     console.log("Detail Image Update")
 }
 
-let heading = document.querySelector('.subtext')
-myElement.innerHTML = "rollType + 'Cinnamon Roll'"
+function callrollInfo() {
+    console.log(rolls{1}.basePrice)
+}

@@ -40,7 +40,7 @@ function testing() {
 }
 
 function updateDetail() {
-
+    document.getElementsByClassName("subtext").innerHTML = rollType + "Cinnamon Roll"
 }
 
 let heading = document.querySelector('.subtext')

@@ -48,6 +48,8 @@ function updateDetail() {
     console.log("Detail Title Update")
     let detailImage = document.querySelector(".cinnamondetail").src = "assets/products/" + rollType + "-cinnamon-roll.jpg";
     console.log("Detail Image Update")
+    let detailPrice = document.querySelector("#totalcost").innerHTML = "$" + baserollsprice
+    console.log("Detail Price Update")
 }
 
 console.log("Load Check");

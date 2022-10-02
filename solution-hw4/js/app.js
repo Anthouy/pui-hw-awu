@@ -48,7 +48,7 @@ function testing() {
 function updateDetail() {
     let detailTitle = document.querySelector(".subtext").innerHTML = rollType + " Cinnamon Roll"
     console.log("Detail Title Update")
-    let detailImage = document.querySelector(".cinnamondetail").src = "assets/products/" + rollType.toLowerCase() + "-cinnamon-roll.jpg";
+    let detailImage = document.querySelector(".cinnamondetail").src = rollimg;
     console.log("Detail Image Update")
     let detailPrice = document.querySelector("#totalcost").innerHTML = "$" + baserollsprice
     console.log("Detail Price Update")
@@ -90,6 +90,7 @@ let packSize = "";
 let glazing = 0;
 let amount = 1;
 let baserollsprice = rolls[rollType].basePrice;
+let rollimg = rolls[rollType].imageFile
 document.getElementById("glazing").addEventListener("change", calculatePrice);
 document.getElementById("packsize").addEventListener("change", calculatePrice);
 console.log("Initialize Final Price on Next Click");

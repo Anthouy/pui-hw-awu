@@ -29,7 +29,7 @@ let cart = [];
 
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
-const rollType = params.get(‘roll’);
+const rollType = params.get('roll');
 
 function testing() {
     console.log(queryString)

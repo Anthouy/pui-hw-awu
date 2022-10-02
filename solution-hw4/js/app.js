@@ -161,3 +161,8 @@ class Roll {
     }
 }
 
+function addtoCart() {
+    let cinnamonRoll = new Roll(rollType, rollGlazing, packSize, basePrice)
+    cart.push(cinnamonRoll)
+    console.log(cinnamonRoll)
+}

@@ -174,7 +174,7 @@ class Roll {
 }
 
 function addtoCart() {
-    let cinnamonRoll = new Roll(rollType, rollGlazing, packSize, basePrice)
+    let cinnamonRoll = new Roll(rollType, rollGlazing, packSize, baserollsprice)
     cart.push(cinnamonRoll)
     console.log(cinnamonRoll)
 }

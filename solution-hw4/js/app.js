@@ -41,7 +41,8 @@ function testing() {
     console.log(baserollsprice)
     console.log(packSize)
     console.log(rollGlazing)
-    console.log(rolls[rollType].imageFile)
+    let rollimg = rolls[rollType].imageFile
+    console.log(rollimg)
 }
 
 function updateDetail() {

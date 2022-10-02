@@ -41,7 +41,9 @@ function testing() {
 
 function updateDetail() {
     let detailTitle = document.querySelector(".subtext").innerHTML = rollType + " Cinnamon Roll"
-    console.log("TestRunScriptupdateDetail")
+    console.log("Detail Title Update")
+    let detailImage = document.querySelector(".cinnamondetail").src = "assets/products/" + rollType + "-cinnamon-roll.jpg";
+    console.log("Detail Image Update")
 }
 
 let heading = document.querySelector('.subtext')

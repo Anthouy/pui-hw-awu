@@ -39,6 +39,8 @@ function testing() {
     console.log(rollType)
     let baserollsprice = rolls[rollType].basePrice
     console.log(baserollsprice)
+    console.log(packSize)
+    console.log(rollGlazing)
 }
 
 function updateDetail() {
@@ -129,28 +131,28 @@ function packChange() {
             console.log(amount)
             console.log(x)
             document.getElementById("packsize").addEventListener("change", calculatePrice);
-            let rollSize = x
+            let packSize = x
         }
         else if (x == allSize[2].cinnCount) {
             amount = allSize[2].priceMult
             console.log(amount)
             console.log(x)
             document.getElementById("packsize").addEventListener("change", calculatePrice);
-            let rollSize = x
+            let packSize = x
         }
         else if (x == allSize[3].cinnCount) {
             amount = allSize[3].priceMult
             console.log(amount)
             console.log(x)
             document.getElementById("packsize").addEventListener("change", calculatePrice);
-            let rollSize = x
+            let packSize = x
         }
         else {
             amount = allSize[0].priceMult
             console.log(amount)
             console.log(x)
             document.getElementById("packsize").addEventListener("change", calculatePrice);
-            let rollSize = x
+            let packSize = x
         }
 }
 

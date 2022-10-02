@@ -40,7 +40,7 @@ function testing() {
 }
 
 function updateDetail() {
-    let detailTitle = document.querySelector(".subtext").innerHTML = rollType + "Cinnamon Roll"
+    let detailTitle = document.querySelector(".subtext").innerHTML = rollType + " Cinnamon Roll"
     console.log("TestRunScriptupdateDetail")
 }
 

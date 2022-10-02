@@ -79,6 +79,8 @@ for(index in allSize) {
 }
 
 // Initial global variables for price calculation.
+let rollGlazing = "";
+let packSize = "";
 let glazing = 0;
 let amount = 1;
 let baserollsprice = rolls[rollType].basePrice;
@@ -94,24 +96,28 @@ function glazingChange() {
             console.log(glazing)
             console.log(x)
             document.getElementById("glazing").addEventListener("change", calculatePrice);
+            let rollGlazing = x
         }
         else if (x == allCinnamon[3].glazetype) {
             glazing = allCinnamon[3].priceadd
             console.log(glazing)
             console.log(x)
             document.getElementById("glazing").addEventListener("change", calculatePrice);
+            let rollGlazing = x
         }
         else if (x == allCinnamon[1].glazetype) {
             glazing = allCinnamon[1].priceadd
             console.log(glazing)
             console.log(x)
             document.getElementById("glazing").addEventListener("change", calculatePrice);
+            let rollGlazing = x
         }
         else {
             glazing = allCinnamon[0].priceadd
             console.log(glazing)
             console.log(x)
             document.getElementById("glazing").addEventListener("change", calculatePrice);
+            let rollGlazing = x
         }
 }
 
@@ -123,24 +129,28 @@ function packChange() {
             console.log(amount)
             console.log(x)
             document.getElementById("packsize").addEventListener("change", calculatePrice);
+            let rollSize = x
         }
         else if (x == allSize[2].cinnCount) {
             amount = allSize[2].priceMult
             console.log(amount)
             console.log(x)
             document.getElementById("packsize").addEventListener("change", calculatePrice);
+            let rollSize = x
         }
         else if (x == allSize[3].cinnCount) {
             amount = allSize[3].priceMult
             console.log(amount)
             console.log(x)
             document.getElementById("packsize").addEventListener("change", calculatePrice);
+            let rollSize = x
         }
         else {
             amount = allSize[0].priceMult
             console.log(amount)
             console.log(x)
             document.getElementById("packsize").addEventListener("change", calculatePrice);
+            let rollSize = x
         }
 }
 

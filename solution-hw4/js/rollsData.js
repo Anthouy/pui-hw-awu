@@ -45,7 +45,3 @@ function updateDetail() {
     let detailImage = document.querySelector(".cinnamondetail").src = "assets/products/" + rollType + "-cinnamon-roll.jpg";
     console.log("Detail Image Update")
 }
-
-function callrollInfo() {
-    console.log(rolls{1}.basePrice)
-}

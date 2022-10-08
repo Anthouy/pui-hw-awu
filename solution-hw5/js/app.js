@@ -51,7 +51,7 @@ class Cartroll {
 
 function createItem() {
     const template = document.querySelector('#item-template');
-    const clone = template.textContent.cloneNode(true);
+    const clone = template.content.cloneNode(true);
     document.main.appendChild(clone);
 }
 

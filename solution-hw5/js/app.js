@@ -195,7 +195,7 @@ function addtoCart() {
 }
 
 function popCart() {
-    let cartitem1 = new Cartroll('Original', 'Sugar milk', 1, 2.49)
+    let cartitem1 = new Cartroll('Original', 'Sugar milk', 1, calculatedprice)
     let cartitem2 = new Cartroll('Walnut', 'Vanilla milk', 12, 39.90)
     let cartitem3 = new Cartroll('Raisin', 'Sugar milk', 3, 8.97)
     let cartitem4 = new Cartroll('Apple', 'Original', 3, 10.47)

@@ -194,10 +194,8 @@ function popCart() {
     cart.push(cartRolls)
 
     console.log(rollType)
-    let baserollsprice = rolls[rollType].basePrice
     console.log(baserollsprice)
     console.log(packSize)
     console.log(rollGlazing)
-    let rollimg = rolls[rollType].imageFile
     console.log(rollimg)
 }

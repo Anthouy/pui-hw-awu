@@ -29,6 +29,15 @@ const rolls = {
 
 let cart = [];
 
+class Roll {
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType;
+        this.glazing =  rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+    }
+}
+
 class Cartroll {
     constructor(rollType, rollGlazing, packSize, calculatedprice) {
         this.type = rollType;
@@ -177,15 +186,6 @@ function calculatePrice() {
     y = x * amount;
     document.getElementById("totalcost").innerHTML = "$" + y.toFixed(2);
     console.log(y)
-}
-
-class Roll {
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice;
-    }
 }
 
 function addtoCart() {

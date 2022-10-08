@@ -189,7 +189,7 @@ function popCart() {
         rollType: 'Original',
         rollGlazing: 'Vanilla milk',
         packSize: '1',
-        baserollsprice: baserollsprice
+        baserollsprice: 2.49
     };
     cart.push(cartRolls)
 

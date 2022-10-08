@@ -183,3 +183,22 @@ function addtoCart() {
     cart.push(cinnamonRoll)
     console.log(cinnamonRoll)
 }
+
+function popCart() {
+    let cartRolls = {
+        rollType: 'Original',
+        rollGlazing: 'Vanilla milk',
+        packSize: '1',
+        baserollsprice: baserollsprice
+    };
+    cart.push(cartRolls)
+
+    console.log(cinnamonRoll)
+    console.log(rollType)
+    let baserollsprice = rolls[rollType].basePrice
+    console.log(baserollsprice)
+    console.log(packSize)
+    console.log(rollGlazing)
+    let rollimg = rolls[rollType].imageFile
+    console.log(rollimg)
+}

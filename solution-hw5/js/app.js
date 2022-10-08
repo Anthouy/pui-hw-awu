@@ -49,6 +49,31 @@ class Cartroll {
     }
 }
 
+class CartItem {
+    constructor(imageURL, cartdescript, calculatedprice, removeRn) {
+        this.itemimageFile = imageURL;
+        this.cartdescription = cartdescript;
+        this.calcprice = calculatedprice
+        this.deleteFunction = deleteFn;
+
+        this.createElement
+        this.updateElement
+    }
+
+    createElement() {
+        const template = document.querySelector('#item-template');
+        const clone = template.textContent.cloneNode(true);
+        this.element = clone.querySelector('.topsection')
+    }
+
+    updateElement() {
+        const itemImageElement = this.element.querySelector('.cinnamoncart');
+        const itemCartDescription = this.element.querySelector('.cartdescription');
+        const itemCalculatedPrice = this.element.querySelector('')
+    }
+
+}
+
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');

@@ -126,6 +126,15 @@ a:active {
     font-weight: 100;
   }
 
+  .itemprice {
+    text-align: left;
+    margin: 8px 0px 0px auto;
+    padding: 0px 14% 0px 0px;
+    color: #000000;
+    font-size: 36px;
+    font-weight: 100;
+  }
+
 .carttotal {
   text-align: left;
   margin: -20px 0px 0px auto;

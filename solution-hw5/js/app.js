@@ -27,6 +27,13 @@ const rolls = {
     }    
 };
 
+let cartRolls = {
+    roll1 : {rollType: 'Original', rollGlazing: 'Sugar milk', packSize: '1', baserollsprice: 2.49},
+    roll2 : {rollType: 'Walnut', rollGlazing: 'Vanilla milk', packSize: '12', baserollsprice: 39.90},
+    roll3 : {rollType: 'Raisin', rollGlazing: 'Sugar milk', packSize: '3', baserollsprice: 8.97},
+    roll4 : {rollType: 'Apple', rollGlazing: 'Original', packSize: '3', baserollsprice: 10.47},
+}
+
 let cart = [];
 
 const queryString = window.location.search;
@@ -184,12 +191,7 @@ function addtoCart() {
     console.log(cinnamonRoll)
 }
 
-let cartRolls = {
-    roll1 : {rollType: 'Original', rollGlazing: 'Sugar milk', packSize: '1', baserollsprice: 2.49},
-    roll2 : {rollType: 'Walnut', rollGlazing: 'Vanilla milk', packSize: '12', baserollsprice: 39.90},
-    roll3 : {rollType: 'Raisin', rollGlazing: 'Sugar milk', packSize: '3', baserollsprice: 8.97},
-    roll4 : {rollType: 'Apple', rollGlazing: 'Original', packSize: '3', baserollsprice: 10.47},
-}
+
 
 function popCart() {
     cart.push(cartRolls)

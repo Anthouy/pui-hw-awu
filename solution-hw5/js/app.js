@@ -50,10 +50,12 @@ class Cartroll {
 }
 
 function createItem() {
-    const template = document.querySelector('#item-template');
-    const clone = template.content.cloneNode(true);
-    document.querySelector('main').prepend(clone);
-    console.log("Item Created")
+    for(index in cart) {
+        const template = document.querySelector('#item-template');
+        const clone = template.content.cloneNode(true);
+        document.querySelector('main').prepend(clone);
+        console.log("Item Created")
+    }
 }
 
 class CartItem {

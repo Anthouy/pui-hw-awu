@@ -183,7 +183,3 @@ function addtoCart() {
     cart.push(cinnamonRoll)
     console.log(cinnamonRoll)
 }
-
-function populateCart() {
-    cart.push(new Roll(Original, Sugar Milk, 1, 2.49))
-}

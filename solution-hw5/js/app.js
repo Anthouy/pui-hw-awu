@@ -51,7 +51,7 @@ class Cartroll {
 
 class CartItem {
     constructor(imageURL, cartdescript, calculatedprice, removeRn) {
-        this.itemimageFile = imageURL;
+        this.itemImageURL = imageURL;
         this.cartdescription = cartdescript;
         this.calcprice = calculatedprice
         this.deleteFunction = deleteFn;
@@ -69,7 +69,11 @@ class CartItem {
     updateElement() {
         const itemImageElement = this.element.querySelector('.cinnamoncart');
         const itemCartDescription = this.element.querySelector('.cartdescription');
-        const itemCalculatedPrice = this.element.querySelector('')
+        const itemCalculatedPrice = this.element.querySelector('.itemprice')
+
+        itemImageElement.src = this.itemImageURL;
+        itemCartDescription.innerText = this.cartdescription;
+        itemCalculatedPrice.innerText = this.calcprice
     }
 
 }

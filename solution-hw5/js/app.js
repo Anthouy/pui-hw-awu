@@ -50,11 +50,10 @@ class Cartroll {
 }
 
 class CartItem {
-    constructor(imageURL, cartdescript, calculatedprice, removeRn) {
+    constructor(imageURL, cartdescript, calculatedprice) {
         this.itemImageURL = imageURL;
         this.cartdescription = cartdescript;
         this.calcprice = calculatedprice
-        this.deleteFunction = deleteFn;
 
         this.createElement
         this.updateElement

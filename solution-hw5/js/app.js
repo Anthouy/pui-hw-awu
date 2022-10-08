@@ -197,7 +197,7 @@ function addtoCart() {
 function popCart() {
     let cartRoll = new Cartroll(Original, 'Sugar milk', 1, 2.49)
     cart.push(cartRoll)
-    console.log(cartRoll)
+    console.log(cart)
 }
 
 

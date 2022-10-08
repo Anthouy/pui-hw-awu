@@ -178,21 +178,36 @@ class Roll {
     }
 }
 
+class Cartroll {
+    constructor(rollType, rollGlazing, packSize, calculatedprice) {
+        this.type = rollType;
+        this.glazing =  rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+    }
+}
+
 function addtoCart() {
     let cinnamonRoll = new Roll(rollType, rollGlazing, packSize, baserollsprice)
     cart.push(cinnamonRoll)
     console.log(cinnamonRoll)
 }
 
-
-
 function popCart() {
-    let cartRolls = {
-    roll1 : {rollType: 'Original', rollGlazing: 'Sugar milk', packSize: '1', calculatedprice: 2.49},
-    roll2 : {rollType: 'Walnut', rollGlazing: 'Vanilla milk', packSize: '12', calculatedprice: 39.90},
-    roll3 : {rollType: 'Raisin', rollGlazing: 'Sugar milk', packSize: '3', calculatedprice: 8.97},
-    roll4 : {rollType: 'Apple', rollGlazing: 'Original', packSize: '3', calculatedprice: 10.47},
+    let cartRoll = new Cartroll(rollType, rollGlazing, packSize, calculatedprice)
+    cart.push(cartRoll)
+    console.log(cartRoll)
 }
-    cart.push(cartRolls)
-    console.log(cart)
-}
+
+
+
+// function popCart() {
+//     let cartRolls = {
+//     roll1 : {rollType: 'Original', rollGlazing: 'Sugar milk', packSize: '1', calculatedprice: 2.49},
+//     roll2 : {rollType: 'Walnut', rollGlazing: 'Vanilla milk', packSize: '12', calculatedprice: 39.90},
+//     roll3 : {rollType: 'Raisin', rollGlazing: 'Sugar milk', packSize: '3', calculatedprice: 8.97},
+//     roll4 : {rollType: 'Apple', rollGlazing: 'Original', packSize: '3', calculatedprice: 10.47},
+// }
+//     cart.push(cartRolls)
+//     console.log(cart)
+// }

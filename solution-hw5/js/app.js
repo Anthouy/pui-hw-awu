@@ -193,9 +193,5 @@ function popCart() {
     };
     cart.push(cartRolls)
 
-    console.log(rollType)
-    console.log(baserollsprice)
-    console.log(packSize)
-    console.log(rollGlazing)
-    console.log(rollimg)
+    console.log(cart)
 }

@@ -1,5 +1,14 @@
 console.log("rollsData Load Check");
 
+// Initial global variables for price calculation.
+let rollGlazing = "";
+let packSize = "";
+let glazing = 0;
+let amount = 1;
+let baserollsprice = rolls[rollType].basePrice;
+let calculatedprice = 1
+let rollimg = rolls[rollType].imageFile
+
 const rolls = {
     "Original": {
         "basePrice": 2.49,
@@ -102,14 +111,6 @@ for(index in allSize) {
     console.log("Populating Pack Size Menu")
 }
 
-// Initial global variables for price calculation.
-let rollGlazing = "";
-let packSize = "";
-let glazing = 0;
-let amount = 1;
-let baserollsprice = rolls[rollType].basePrice;
-let calculatedprice = 1
-let rollimg = rolls[rollType].imageFile
 document.getElementById("glazing").addEventListener("change", calculatePrice);
 document.getElementById("packsize").addEventListener("change", calculatePrice);
 console.log("Initialize Final Price on Next Click");

@@ -83,11 +83,6 @@ class CartItem {
 
 }
 
-function addNewItem(imageURL, cartdescript, calculatedprice) {
-    const item = new CartItem(imageURL, cartdescript, calculatedprice);
-    document.querySelector('main').prepend(item.element)
-}
-
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');

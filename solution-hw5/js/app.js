@@ -185,13 +185,24 @@ function addtoCart() {
 }
 
 function popCart() {
-    let cartRolls = {
-        rollType: 'Original',
-        rollGlazing: 'Vanilla milk',
-        packSize: '1',
-        baserollsprice: 2.49
-    };
-    cart.push(cartRolls)
+    let cartRolls [] = 
+    cartRolls[0] = {rollType: 'Original',
+                    rollGlazing: 'Sugar milk',
+                    packSize: '1',
+                    baserollsprice: 2.49};
+    cartRolls[1] = {rollType: 'Walnut',
+                    rollGlazing: 'Vanilla milk',
+                    packSize: '12',
+                    baserollsprice: 39.90};
+    cartRolls[2] = {rollType: 'Raisin',
+                    rollGlazing: 'Sugar milk',
+                    packSize: '3',
+                    baserollsprice: 8.97};
+    cartRolls[3] = {rollType: 'Apple',
+                    rollGlazing: 'Original',
+                    packSize: '3',
+                    baserollsprice: 10.47};
 
+    cart.push(cartRolls)
     console.log(cart)
 }

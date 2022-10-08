@@ -1,5 +1,7 @@
 console.log("rollsData Load Check");
 
+let calculatedprice = 0;
+
 const rolls = {
     "Original": {
         "basePrice": 2.49,
@@ -107,7 +109,7 @@ let rollGlazing = "";
 let packSize = "";
 let glazing = 0;
 let amount = 1;
-let calculatedprice = 0;
+
 let baserollsprice = rolls[rollType].basePrice;
 let rollimg = rolls[rollType].imageFile
 document.getElementById("glazing").addEventListener("change", calculatePrice);

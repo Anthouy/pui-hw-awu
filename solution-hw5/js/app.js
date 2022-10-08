@@ -182,8 +182,16 @@ function packChange() {
         }
 }
 
-// Calculation function.
+// Calculation function for detail.
 function calculatePrice() {
+    x = baserollsprice + glazing;
+    y = x * amount;
+    document.getElementById("totalcost").innerHTML = "$" + y.toFixed(2);
+    console.log(y)
+}
+
+// Calculation function for cart.
+function calculatecartPrice() {
     x = baserollsprice + glazing;
     y = x * amount;
     document.getElementById("totalcost").innerHTML = "$" + y.toFixed(2);

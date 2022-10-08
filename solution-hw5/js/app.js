@@ -193,7 +193,6 @@ function popCart() {
     };
     cart.push(cartRolls)
 
-    console.log(cinnamonRoll)
     console.log(rollType)
     let baserollsprice = rolls[rollType].basePrice
     console.log(baserollsprice)

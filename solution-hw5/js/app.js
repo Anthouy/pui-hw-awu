@@ -34,7 +34,7 @@ class Cartroll {
         this.type = rollType;
         this.glazing =  rollGlazing;
         this.size = packSize;
-        this.basePrice = basePrice;
+        this.calculatedprice = calculatedprice;
     }
 }
 

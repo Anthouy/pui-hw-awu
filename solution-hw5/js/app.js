@@ -29,6 +29,15 @@ const rolls = {
 
 let cart = [];
 
+class Cartroll {
+    constructor(rollType, rollGlazing, packSize, calculatedprice) {
+        this.type = rollType;
+        this.glazing =  rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+    }
+}
+
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');
@@ -172,15 +181,6 @@ function calculatePrice() {
 
 class Roll {
     constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice;
-    }
-}
-
-class Cartroll {
-    constructor(rollType, rollGlazing, packSize, calculatedprice) {
         this.type = rollType;
         this.glazing =  rollGlazing;
         this.size = packSize;

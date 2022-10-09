@@ -230,7 +230,7 @@ function calculatePrice() {
 
 // Calculation function for cart.
 function calculatecartPrice() {
-    costList = document.querySelectorAll(itemprice)
+    costList = document.querySelectorAll(".itemprice")
     console.log(costList)
 
     x = baserollsprice + glazing;

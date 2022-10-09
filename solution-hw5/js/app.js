@@ -58,7 +58,6 @@ function createItem() {
             console.log("Items Created")
         }
     }
-}
 
 class CartItem {
     constructor(imageURL, cartdescript, calculatedprice) {

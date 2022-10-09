@@ -230,7 +230,7 @@ function calculatePrice() {
 
 // Calculation function for cart.
 function calculatecartPrice() {
-    costList = document.querySelectorAll(".itemprice").innerHTML
+    costList = document.querySelectorAll(".itemprice")
     console.log(costList)
 }
 

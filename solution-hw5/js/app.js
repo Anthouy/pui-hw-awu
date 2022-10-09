@@ -232,11 +232,6 @@ function calculatePrice() {
 function calculatecartPrice() {
     costList = document.querySelectorAll(".itemprice").innerHTML
     console.log(costList)
-
-    x = baserollsprice + glazing;
-    y = x * amount;
-    document.getElementById("totalcost").innerHTML = "$" + y.toFixed(2);
-    console.log(y)
 }
 
 function addtoCart() {

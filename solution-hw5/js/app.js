@@ -231,7 +231,7 @@ function calculatePrice() {
 // Calculation function for cart.
 function calculatecartPrice() {
     itemPrice = document.querySelector(".itemprice")
-    itemCost = itemPrice.replace(/\D/g,"");
+    itemCost = itemPrice.replace(/\D/g, "");
     console.log(itemCost)
 }
 

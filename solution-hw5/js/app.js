@@ -230,8 +230,8 @@ function calculatePrice() {
 
 // Calculation function for cart.
 function calculatecartPrice() {
-    let input = document.querySelector(".itemprice");
-    let res = input.replace(/\D/g,'');
+    let text = document.querySelector(".itemprice");
+    let res = text.replace(/\D/g,'');
     console.log(res);
 }
 

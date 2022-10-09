@@ -57,8 +57,6 @@ function createItem() {
             document.querySelector('main').prepend(clone);
             console.log("Items Created")
         }
-    updateItem() {
-
     }
 }
 
@@ -235,7 +233,7 @@ function calculatePrice() {
 function calculatecartPrice() {
     costList = document.querySelectorAll(itemprice)
     console.log(costList)
-    
+
     x = baserollsprice + glazing;
     y = x * amount;
     document.getElementById("totalcost").innerHTML = "$" + y.toFixed(2);

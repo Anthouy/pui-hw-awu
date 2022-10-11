@@ -55,8 +55,8 @@ function createItem() {
             const template = document.querySelector('#item-template');
             const clone = template.content.cloneNode(true);
             document.querySelector('main').prepend(clone);
-            console.log("Items Created")
-            document.getElementsByClassName("cartdescriptionsmall").innerHTML = "test"
+            console.log("Items Created");
+            document.getElementsByClassName("cartdescriptionsmall").innerHTML = "test";
         }
     }
 

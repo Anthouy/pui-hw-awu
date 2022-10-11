@@ -61,8 +61,8 @@ function createItem() {
     }
 
 function updateItem() {
-    const descript = document.querySelector("cartdescriptionsmall");
-    descript.innerHTML = "test";
+    let description = content.querySelector('cartdescriptionsmall');
+    description.textContent = 'test';
 }
 
 class CartItem {

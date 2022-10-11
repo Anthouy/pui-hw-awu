@@ -61,7 +61,7 @@ function createItem() {
 
 function updateItem() {
     let item = document.querySelector('#item-template');
-    let description = item.querySelector('.cartdescriptionsmall');
+    let description = item.content.querySelector('.cartdescriptionsmall');
     description.innerHTML = 'test';
 }
 

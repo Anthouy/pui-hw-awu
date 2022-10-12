@@ -168,7 +168,7 @@ for (const roll of rollSet) {
 
 // calculates the total checkout price
 function cartTotalPrice() {
-    let totalPrice = document.querySelector('.carttotal');
+    let totalPrice = document.querySelector('.carttotal'[2]);
     let price = 0;
 
     for(const roll of rollSet) {

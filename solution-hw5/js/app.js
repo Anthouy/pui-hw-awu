@@ -64,7 +64,7 @@ function createItem() {
             x++
         }
         y = cart[0].basePrice + cart[1].basePrice + cart[2].basePrice + cart[3].basePrice
-        document.querySelector('carttotal').innerHTML = y
+        document.querySelector('.carttotal').innerHTML = y
         console.log(y)
     }
 

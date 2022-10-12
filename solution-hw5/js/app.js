@@ -61,7 +61,7 @@ function createItem() {
 
 function removeItem() {
     console.log('Remove')
-    const element = document.querySelector('#itemcard');
+    const element = document.querySelector('#itemcard:nth-child(2)');
     element.remove();
 }
 

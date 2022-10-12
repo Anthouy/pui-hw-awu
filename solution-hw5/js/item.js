@@ -36,4 +36,4 @@ class Roll {
     }
 }
 
-export { Item }
+export { Roll }

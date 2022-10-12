@@ -53,10 +53,15 @@ function createItem() {
     let x = 0
     popCart()
         for(index in cart) {
+
+            x = cart[x].basePrice + glazing;
+            y = x * amount;
+            individualItemCost = y
+
             let item = document.querySelector('#item-template');
             item.content.querySelector('.cinnamoncart').src = "assets/products/" + rolls[cart[x].type].imageFile
             item.content.querySelector('.cartdescriptionsmall').innerHTML = cart[x].type + ' Cinnamon Roll<br>Glazing: ' + cart[x].glazing + '<br>Pack Size: ' + cart[x].size + '<br>'
-            item.content.querySelector('.itemprice').innerHTML = '<br>$ ' + cart[x].baserollsprice
+            item.content.querySelector('.itemprice').innerHTML = '<br>$ ' + individualItemCost
             const template = document.querySelector('#item-template');
             const clone = template.content.cloneNode(true);
             document.querySelector('main').prepend(clone);
@@ -156,6 +161,7 @@ let amount = 1;
 
 let baserollsprice = rolls[rollType].basePrice;
 let rollimg = rolls[rollType].imageFile
+let individualItemCost = 0
 document.getElementById("glazing").addEventListener("change", calculatePrice);
 document.getElementById("packsize").addEventListener("change", calculatePrice);
 console.log("Initialize Final Price on Next Click");
@@ -237,8 +243,7 @@ function calculatePrice() {
 function calculateIndividualItem() {
     x = baserollsprice + glazing;
     y = x * amount;
-    document.getElementById("totalcost").innerHTML = "$" + y.toFixed(2);
-    console.log(y)
+    individualItemCost = y
 }
 
 // Calculation function for cart.

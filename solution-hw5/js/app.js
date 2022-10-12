@@ -40,15 +40,6 @@ class Roll {
     }
 }
 
-class Cartroll {
-    constructor(rollType, rollGlazing, packSize, calculatedprice) {
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.calculatedprice = calculatedprice;
-    }
-}
-
 function createItem() {
     let x = 0
     popCart()
@@ -67,34 +58,6 @@ function createItem() {
         document.querySelector('.carttotal').innerHTML = '$ ' + y.toFixed(2)
         console.log(y.toFixed(2))
     }
-
-class CartItem {
-    constructor(imageURL, cartdescript, calculatedprice) {
-        this.itemImageURL = imageURL;
-        this.cartdescription = cartdescript;
-        this.calcprice = calculatedprice
-
-        this.createElement
-        this.updateElement
-    }
-
-    createElement() {
-        const template = document.querySelector('#item-template');
-        const clone = template.textContent.cloneNode(true);
-        this.element = clone.querySelector('.topsection')
-    }
-
-    updateElement() {
-        const itemImageElement = this.element.querySelector('.cinnamoncart');
-        const itemCartDescription = this.element.querySelector('.cartdescription');
-        const itemCalculatedPrice = this.element.querySelector('.itemprice')
-
-        itemImageElement.src = this.itemImageURL;
-        itemCartDescription.innerText = this.cartdescription;
-        itemCalculatedPrice.innerText = this.calcprice
-    }
-
-}
 
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);

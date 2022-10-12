@@ -50,25 +50,24 @@ class Cartroll {
 }
 
 function createItem() {
+    let x = 0
     popCart()
         for(index in cart) {
+            let item = document.querySelector('#item-template');
+            item.content.querySelector('.cartdescriptionsmall').innerHTML = cart[x].type + ' Cinnamon Roll<br>Glazing: ' + cart[x].glazing + '<br>Pack Size: ' + cart[x].size + '<br>'
             const template = document.querySelector('#item-template');
             const clone = template.content.cloneNode(true);
             document.querySelector('main').prepend(clone);
             console.log("Items Created");
+            x++
         }
     }
 
-function updateItem() {
-    let item = document.querySelector('#item-template');
-    item.content.querySelector('.cartdescriptionsmall').innerHTML = 'Original Cinnamon Roll<br>Glazing: Keep original<br>Pack Size: 1<br>'
-}
-
 function callingProperties() {
-    console.log(cart[1].type)
-    console.log(cart[1].glazing)
-    console.log(cart[1].size)
-    console.log(cart[1].calculatedprice)
+    console.log()
+    console.log()
+    console.log()
+    console.log(cart[x].calculatedprice)
 }
 
 class CartItem {

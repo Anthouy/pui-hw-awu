@@ -61,9 +61,25 @@ function createItem() {
 
 function removeItem() {
     console.log('Remove')
-    const element = document.querySelector('#itemcard:nth-child(2)');
-    element.remove();
-}
+    let child = document.querySelector('.remove')[x]
+    if (child == document.querySelector('.remove')[1]) {
+        const element = document.querySelector('#itemcard:nth-child(1)');
+        element.remove();
+    }
+    else if (child == document.querySelector('.remove')[2]) {
+        const element = document.querySelector('#itemcard:nth-child(2)');
+        element.remove();
+    }
+    else if (child == document.querySelector('.remove')[3]) {
+        const element = document.querySelector('#itemcard:nth-child(3)');
+        element.remove();
+    }
+    else if (child == document.querySelector('.remove')[4]) {
+        const element = document.querySelector('#itemcard:nth-child(4)');
+        element.remove();
+    }
+    }
+    
 
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);

@@ -59,6 +59,16 @@ function createItem() {
         console.log(y.toFixed(2))
     }
 
+const handleRemove = e => {
+    const item = e.target.closest('.item');
+    item.parentElement.removeChild(item);
+    };
+
+function removeItem() {
+    let item = document.querySelector('#item-template');
+    item.content.querySelector('.remove').addEventListener('click', handleRemove);
+}
+
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');

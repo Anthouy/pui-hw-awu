@@ -54,7 +54,7 @@ function createItem() {
     popCart()
         for(index in cart) {
             a = cart[x].basePrice + allCinnamon[x];
-            y = a * amount;
+            y = a * allSize[0].priceMult;
             individualItemCost = y;
             let item = document.querySelector('#item-template');
             item.content.querySelector('.cinnamoncart').src = "assets/products/" + rolls[cart[x].type].imageFile

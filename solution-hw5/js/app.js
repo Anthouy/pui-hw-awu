@@ -61,7 +61,7 @@ function createItem() {
 
 function updateItem() {
     let item = document.querySelector('#item-template');
-    item.content.querySelector('.cartdescriptionsmall').innerHTML = 'test'
+    item.content.querySelector('.cartdescriptionsmall').innerHTML = 'Original Cinnamon Roll<br>Glazing: Keep original<br>Pack Size: 1<br>'
 }
 
 class CartItem {

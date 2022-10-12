@@ -1,3 +1,4 @@
+import { Item } from "./item.js";
 console.log("rollsData Load Check");
 
 const rolls = {
@@ -29,44 +30,6 @@ const rolls = {
 
 const itemSet = new Set();
 
-class Roll {
-    constructor(rollType, rollGlazing, packSize, basePrice, deleteFn) {
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice;
-
-        this.deleteFunction = deleteFn;
-
-        this.createItem();
-        this.updateItem();
-    }
-
-    createItem() {
-        const template = document.querySelector('#item-template')
-        const clone = template.content.cloneNode(true);
-        this.element = clone.querySelector('.topsection')
-
-        const btnDelete = this.element.querySelector('.remove');
-        console.log(btnDelete);
-        btnDelete.onclick = this.deleteNote.bind(this);
-    };
-
-    updateItem(item) {
-        const itemImageElement = item.element.querySelector('.cinnamoncart');
-        const itemDescription = item.element.querySelector('.cartdescriptionsmall');
-        const itemPrice = item.element.querySelector('.cartdescription');
-
-        itemImageElement.src = this.itemImageURL;
-        itemDescription.innerText = this.itemDescription;
-        itemPrice.innerText = this.basePrice;
-    }
-    deleteItem() {
-        this.element.remove();
-        this.deleteFunction(this);
-    }
-}
-
 const itemListElement = document.querySelector('#item-list');
 
 function addNewItem(rollType, rollGlazing, packSize, basePrice) {
@@ -79,11 +42,6 @@ function addNewItem(rollType, rollGlazing, packSize, basePrice) {
 function deleteExistingItem(item) {
     itemSet.delete(item);
     saveToLocalStorage();
-}
-
-function deleteItem(item) {
-    item.element.remove();
-    itemSet.delete(item);
 }
 
 const itemOne = addNewItem(

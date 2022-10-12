@@ -59,14 +59,6 @@ function createItem() {
         console.log(y.toFixed(2))
     }
 
-function removeItem() {
-    const removeLink = this.element.querySelector('.remove');
-    removeLink.onclick = this.deleteItem.bind(this);
-
-    deleteItem() {
-        this.element.remove();
-}
-
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');

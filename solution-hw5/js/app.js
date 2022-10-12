@@ -55,6 +55,7 @@ function createItem() {
         for(index in cart) {
             let item = document.querySelector('#item-template');
             item.content.querySelector('.cartdescriptionsmall').innerHTML = cart[x].type + ' Cinnamon Roll<br>Glazing: ' + cart[x].glazing + '<br>Pack Size: ' + cart[x].size + '<br>'
+            item.content.querySelector('.itemprice').innerHTML = '<br>$ ' + cart[x].calculatedprice
             const template = document.querySelector('#item-template');
             const clone = template.content.cloneNode(true);
             document.querySelector('main').prepend(clone);
@@ -62,13 +63,6 @@ function createItem() {
             x++
         }
     }
-
-function callingProperties() {
-    console.log()
-    console.log()
-    console.log()
-    console.log(cart[x].calculatedprice)
-}
 
 class CartItem {
     constructor(imageURL, cartdescript, calculatedprice) {

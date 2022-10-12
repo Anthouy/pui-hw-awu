@@ -61,7 +61,7 @@ function createItem() {
 
 function removeItem() {
     console.log('Remove')
-    const element = document.querySelector('.topsection');
+    const element = document.querySelector('#itemcard');
     element.remove();
 }
 

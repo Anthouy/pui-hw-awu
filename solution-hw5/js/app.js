@@ -255,10 +255,10 @@ function addtoCart() {
 }
 
 function popCart() {
-    let cartitem1 = new Roll('Original', 'Sugar milk', 1, baserollsprice)
-    let cartitem2 = new Roll('Walnut', 'Vanilla milk', 12, baserollsprice)
-    let cartitem3 = new Roll('Raisin', 'Sugar milk', 3, baserollsprice)
-    let cartitem4 = new Roll('Apple', 'Original', 3, baserollsprice)
+    let cartitem1 = new Roll('Original', 'Sugar milk', 1, 1)
+    let cartitem2 = new Roll('Walnut', 'Vanilla milk', 12, 1)
+    let cartitem3 = new Roll('Raisin', 'Sugar milk', 3, 1)
+    let cartitem4 = new Roll('Apple', 'Original', 3, 1)
     cart.push(cartitem1, cartitem2, cartitem3, cartitem4)
     console.log(cart)
 }

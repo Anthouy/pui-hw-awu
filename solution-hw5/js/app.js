@@ -56,7 +56,7 @@ function createItem() {
             let item = document.querySelector('#item-template');
             item.content.querySelector('.cinnamoncart').src = "assets/products/" + rolls[cart[x].type].imageFile
             item.content.querySelector('.cartdescriptionsmall').innerHTML = cart[x].type + ' Cinnamon Roll<br>Glazing: ' + cart[x].glazing + '<br>Pack Size: ' + cart[x].size + '<br>'
-            item.content.querySelector('.itemprice').innerHTML = '<br>$ ' + individualItemCost
+            item.content.querySelector('.itemprice').innerHTML = '<br>$ ' + cart[x].basePrice
             const template = document.querySelector('#item-template');
             const clone = template.content.cloneNode(true);
             document.querySelector('main').prepend(clone);

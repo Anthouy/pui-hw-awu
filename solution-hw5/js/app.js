@@ -61,8 +61,8 @@ function createItem() {
 
 function removeItem() {
     console.log('Remove')
-    let item = document.querySelector('#item-template');
-    element = item.querySelector('.topsection');
+    const item = document.querySelector('#item-template');
+    const element = item.querySelector('.topsection');
     element.remove();
 }
 

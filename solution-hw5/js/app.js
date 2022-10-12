@@ -49,6 +49,27 @@ function createItem(item) {
     const clone = template.content.cloneNode(true);
 
     item.element = clone.querySelector('.topsection');
+
+    const btnDelete = item.element.querySelector('.remove');
+    console.log(btnDelete);
+    btnDelete.addEventListener('click', () => {
+        deleteItem(item);
+    })};
+
+const itemListElement = document.querySelector('#item-list');
+itemListElement.prepend(notecard.element);
+
+updateItem(item)
+
+function updateItem(item) {
+    const itemImageElement = item.element.querySelector('.cinnamoncart');
+    const itemDescription = item.element.querySelector('.cartdescriptionsmall');
+    const itemPrice = item.element.querySelector('.cartdescription');
+}
+
+function deleteItem(item) {
+    item.element.remove();
+    itemSet.delete(item);
 }
 
 let cart = [];

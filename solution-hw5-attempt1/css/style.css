@@ -1,0 +1,340 @@
+/* header divider */
+p.solid {
+    border-style: solid;
+  }
+
+/* cart divider, 900px long */
+p.solidcart {
+    text-align: right;
+    width: 763.75px;
+    border-style: solid;
+    margin: 0px 0px 50px auto;
+    padding: 0px 0px 0px 0px;
+  }
+
+/* remove link decorations */
+a:link { 
+  text-decoration: none;
+  color: black; 
+}
+
+/* remove link decorations */
+a:visited { 
+  text-decoration: none; 
+  color: black;
+}
+
+/* remove link decorations */
+a:hover { 
+  text-decoration: none;
+  color: black; 
+}
+
+/* remove link decorations */
+a:active { 
+  text-decoration: none;
+  color: black; 
+}
+
+.topsection {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+#itemcard {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.topsectionright {
+  flex-grow: 1;
+  margin-left: auto;
+  padding-left: 2%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 65px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  gap: 65px;
+}
+
+.productcontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shoppingcartcontainer {
+  display: flex;
+  width: 784px;
+  justify-content: flex-start;
+  padding-left: 400px;
+}
+
+.logo {
+    width: 400px;
+  }
+
+.products {
+    text-align: center;
+    background-color: #f3e62c;
+    margin: 15px;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 750;
+  }
+
+.productslight {
+    text-align: center;
+    margin: 15px;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 75;
+  } 
+
+.cart {
+    text-align: center;
+    margin: 15px;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 75;
+  }
+
+.cartbold {
+    text-align: center;
+    background-color: #f3e62c;
+    margin: 15px;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 750;
+  }  
+
+.subtext {
+    text-align: left;
+    margin: 80px 0px 0px 0px;
+    color: #000000;
+    font-size: 48px;
+    font-weight: 100;
+  }
+
+.cartdescription {
+    text-align: left;
+    margin: 8px 0px 0px auto;
+    padding: 0px 14% 0px 0px;
+    color: #000000;
+    font-size: 36px;
+    font-weight: 100;
+  }
+
+  .itemprice {
+    text-align: left;
+    margin: 8px 0px 0px auto;
+    padding: 0px 14% 0px 0px;
+    color: #000000;
+    font-size: 36px;
+    font-weight: 100;
+  }
+
+.carttotal {
+  text-align: left;
+  margin: -20px 0px 0px auto;
+  padding: 0px 14% 0px 0px;
+  color: #000000;
+  font-size: 36px;
+  font-weight: 100;
+}
+
+.carttotaltext {
+  text-align: left;
+  margin: -20px 0px 0px auto;
+  padding: 0px 14% 0px 0px;
+  color: #000000;
+  font-size: 36px;
+  font-weight: 100;
+}
+
+.cartdescriptionsmall {
+  text-align: left;
+  margin: 0px 0px 0px 0px;
+  padding: 24px 0px 0px 0px;
+  color: #000000;
+  font-size: 26px;
+  font-weight: 100;
+}
+
+.remove {
+  text-align: left;
+  text-decoration: underline;
+  margin: 10px 0px 0px 0px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 175;
+}
+
+.detailtextcontainer {
+  display: block;
+  width: 361.675px;
+  height: fit-content;
+  margin: 25px auto 90px auto;
+}
+
+.detailtextcontainer2 {
+  display: block;
+  width: 361.675px;
+  height: fit-content;
+  margin: 35px auto 10px auto;
+}
+
+.detailtextcontainer3 {
+  display: table;
+  width: 361.675px;
+  height: fit-content;
+  margin: 120px auto 10px auto;
+}
+
+.detailtext {
+    display:block;
+    text-align: left;
+    color: #000000;
+    font-size: 32px;
+    font-weight: 100;
+  }
+
+.cinnamon {
+    display:block;
+    margin: 5px auto 10px -2.5px;
+    width: 325px;
+    border: 5px solid #000000;
+    padding: 0px 0px 0px 0px;
+  }
+
+.cinnamondetail {
+    display:block;
+    margin: 5px auto 0px auto;
+    width: 600px;
+    border: 5px solid #000000;
+  }
+
+.cinnamoncart {
+    display:block;
+    margin: 5px 25px 0px auto;
+    width: 125px;
+    border: 5px solid #000000;
+  }
+
+#cinnamoncartimage {
+  display:block;
+  margin: 5px 25px 0px auto;
+  width: 125px;
+  border: 5px solid #000000;
+}
+
+.cinnamonpricebold {
+    text-align: left;
+    margin: -10px 0px 5px 10px;
+    color: #000000;
+    font-size: 28px;
+    font-weight: 750;
+  }
+
+#totalcost {
+  text-align: left;
+  margin: -10px 0px 5px 10px;
+  color: #000000;
+  font-size: 28px;
+  font-weight: 750;
+}
+
+/* button for cinnamon rolls in gallery */
+.btn-roll {
+    display: block;
+    text-align: left;
+    width: 350px;
+    height: fit-content;
+    border: none;
+    background: none;
+    margin: 25px auto 50px auto;
+    padding: 0px 0px 10px 10px;
+    font-size: 28px;
+    font-weight: 100;
+
+    cursor: pointer;
+  }
+
+/* hover for btn-roll button */
+.btn-roll:hover {
+    background-color: #f3e62c;
+  }
+
+/* drop down menu */
+.menus {
+    display: block;
+    width: 361.375px;
+    height: fit-content;
+    border: 3px solid #000000;
+    margin: 5px auto 5px auto;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+#glazing {
+  display: block;
+  width: 361.375px;
+  height: fit-content;
+  border: 3px solid #000000;
+  margin: 5px auto 5px auto;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+#packsize {
+  display: block;
+  width: 361.375px;
+  height: fit-content;
+  border: 3px solid #000000;
+  margin: 5px auto 5px auto;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+/* button for adding cinnamon roll */
+.btn-add {
+  display: block;
+  border: 3px solid #000000;
+  background: #f3e62c;
+  margin: -46px 0px 0px auto;
+  padding: 5px 15px 5px 15px;
+  font-size: 26px;
+  font-weight: 750;
+
+  cursor: pointer;
+}
+
+/* hover for btn-add button */
+.btn-add:hover {
+  background-color: #f3e62c;
+}
+
+/* button for checkout */
+.btn-chkout {
+  display: block;
+  border: 3px solid #000000;
+  background: #f3e62c;
+  margin: 0px 75px 0px auto;
+  padding: 5px 15px 5px 15px;
+  font-size: 26px;
+  font-weight: 750;
+
+  cursor: pointer;
+}
+
+/* hover for btn-chkout button */
+.btn-chkout:hover {
+  background-color: #f3e62c;
+}

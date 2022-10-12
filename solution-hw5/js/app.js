@@ -60,7 +60,9 @@ function createItem() {
     }
 
 function removeItem() {
-    console.log('Working!')
+    console.log('Remove')
+    let item = document.querySelector('#item-template');
+    item.remove()
 }
 
 const queryString = window.location.search;

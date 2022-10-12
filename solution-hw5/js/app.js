@@ -59,7 +59,7 @@ function createItem() {
             item.content.querySelector('.itemprice').innerHTML = '<br>$ ' + cart[x].basePrice
             const template = document.querySelector('#item-template');
             const clone = template.content.cloneNode(true);
-            document.querySelector('main').prepend(clone);
+            document.querySelector('main').append(clone);
             console.log("Items Created");
             x++
         }
@@ -236,9 +236,11 @@ function calculatePrice() {
 
 // Calculation function for cart.
 function calculatecartPrice() {
-    let text = document.querySelector(".itemprice").innerHTML;
-    let res = text.replace(/\D/g,'');
-    console.log(res);
+    a = rolls[cart[x].type].basePrice + rolls[cart[x].type].imageFile;
+    if 
+    y = a * allSize[1].priceMult;
+    document.getElementById("totalcost").innerHTML = "$" + y.toFixed(2);
+    console.log(y)
 }
 
 function addtoCart() {

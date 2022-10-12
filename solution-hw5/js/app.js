@@ -59,7 +59,7 @@ function createItem(item) {
     })};
 
 const itemListElement = document.querySelector('#item-list');
-itemListElement.prepend(notecard.element);
+itemListElement.prepend(item.element);
 
 updateItem(item)
 

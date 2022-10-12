@@ -38,7 +38,13 @@ a:active {
 
 .topsection {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
 
+#itemcard {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;

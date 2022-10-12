@@ -62,19 +62,19 @@ function createItem() {
 function removeItem() {
     console.log('Remove')
     let child = document.querySelectorAll('.remove')
-    if (child == document.querySelectorAll('.remove')[1]) {
+    if (child = document.querySelectorAll('.remove')[1]) {
         const element = document.querySelectorAll('#itemcard')[1];
         element.remove();
     }
-    else if (child == document.querySelectorAll('.remove')[2]) {
+    else if (child = document.querySelectorAll('.remove')[2]) {
         const element = document.querySelectorAll('#itemcard')[2];
         element.remove();
     }
-    else if (child == document.querySelectorAll('.remove')[3]) {
+    else if (child = document.querySelectorAll('.remove')[3]) {
         const element = document.querySelectorAll('#itemcard')[3];
         element.remove();
     }
-    else if (child == document.querySelectorAll('.remove')[4]) {
+    else if (child = document.querySelectorAll('.remove')[4]) {
         const element = document.querySelectorAll('#itemcard')[4];
         element.remove();
     }

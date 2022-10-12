@@ -156,7 +156,6 @@ let amount = 1;
 
 let baserollsprice = rolls[rollType].basePrice;
 let rollimg = rolls[rollType].imageFile
-let itemroll = []
 document.getElementById("glazing").addEventListener("change", calculatePrice);
 document.getElementById("packsize").addEventListener("change", calculatePrice);
 console.log("Initialize Final Price on Next Click");

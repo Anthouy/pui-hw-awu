@@ -38,7 +38,7 @@ class Roll {
         this.size = packSize;
         this.basePrice = basePrice;
 
-        const btnDelete = this.element.querySelector('.remove');
+        const btnDelete = this.document.querySelector('#item-template').content.querySelector('.remove');
 
         btnDelete.onclick = this.deleteItem.bind(this);
     }

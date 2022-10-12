@@ -156,7 +156,6 @@ let amount = 1;
 
 let baserollsprice = rolls[rollType].basePrice;
 let rollimg = rolls[rollType].imageFile
-let individualItemCost = 0
 document.getElementById("glazing").addEventListener("change", calculatePrice);
 document.getElementById("packsize").addEventListener("change", calculatePrice);
 console.log("Initialize Final Price on Next Click");
@@ -233,12 +232,6 @@ function calculatePrice() {
     y = x * amount;
     document.getElementById("totalcost").innerHTML = "$" + y.toFixed(2);
     console.log(y)
-}
-
-function calculateIndividualItem() {
-    x = baserollsprice + glazing;
-    y = x * amount;
-    individualItemCost = y
 }
 
 // Calculation function for cart.

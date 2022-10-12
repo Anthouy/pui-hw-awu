@@ -75,8 +75,33 @@ function deleteItem(item) {
 }
 
 const itemOne = addNewItem(
-    ""
-)
+    "Original",
+    "Sugar milk",
+    "1",
+    "2.49"
+);
+
+
+const itemTwo = addNewItem(
+    "Walnut",
+    "Vanilla milk",
+    "12",
+    "39.90"
+);
+
+const itemThree = addNewItem(
+    "Raisin",
+    "Sugar milk",
+    "3",
+    "8.97"
+);
+
+const itemFour = addNewItem(
+    "Apple",
+    "Original",
+    "3",
+    "10.47"
+);
 
 let cart = [];
 

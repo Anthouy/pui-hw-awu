@@ -54,7 +54,7 @@ function createItem() {
     popCart()
         for(index in cart) {
             let item = document.querySelector('#item-template');
-            item.content.querySelector('.cinnamoncart').src = "assets/product/" + rolls[cart[x].type].imageFile
+            item.content.querySelector('.cinnamoncart').src = "assets/product/" + rolls[Walnut].imageFile
             item.content.querySelector('.cartdescriptionsmall').innerHTML = cart[x].type + ' Cinnamon Roll<br>Glazing: ' + cart[x].glazing + '<br>Pack Size: ' + cart[x].size + '<br>'
             item.content.querySelector('.itemprice').innerHTML = '<br>$ ' + cart[x].baserollsprice
             const template = document.querySelector('#item-template');

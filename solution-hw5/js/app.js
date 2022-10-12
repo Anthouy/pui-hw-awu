@@ -33,6 +33,8 @@ class Roll {
         this.glazing =  rollGlazing;
         this.size = packSize;
         this.basePrice = basePrice;
+
+        this.element = null;
     }
 }
 

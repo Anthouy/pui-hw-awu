@@ -215,12 +215,19 @@ a:active {
     border: 5px solid #000000;
   }
 
-.cinnamoncartimage {
+.cinnamoncart {
     display:block;
     margin: 5px 25px 0px auto;
     width: 125px;
     border: 5px solid #000000;
   }
+
+#cinnamoncartimage {
+  display:block;
+  margin: 5px 25px 0px auto;
+  width: 125px;
+  border: 5px solid #000000;
+}
 
 .cinnamonpricebold {
     text-align: left;

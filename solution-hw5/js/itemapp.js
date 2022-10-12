@@ -121,7 +121,8 @@ function updateElement(roll) {
     rollTypeElement.innerText = roll.type + ' Cinnamon Roll'; 
     rollGlazingElement.innerText = 'Glazing: ' + roll.glazing; 
     rollPackElement.innerText = 'Pack Size: ' + roll.size; 
-    rollPriceElement.innerText = '$ ' + calcPrice; 
+    rollPriceElement.innerText = '$ ' + calcPrice;
+    console.log(rollImageElement.src)
 }
 
 // calculates total price of each roll selection with glaze + pack size modifications

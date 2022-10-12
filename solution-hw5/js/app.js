@@ -37,13 +37,7 @@ class Roll {
         this.glazing =  rollGlazing;
         this.size = packSize;
         this.basePrice = basePrice;
-
-        const btnDelete = this.element.querySelector('.remove');
-        btnDelete.onclick = this.deleteItem.bind(this);
     }
-    deleteItem() {
-        this.element.remove();
-      }
 }
 
 function createItem() {

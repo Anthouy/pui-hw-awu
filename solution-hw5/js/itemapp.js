@@ -117,7 +117,7 @@ function updateElement(roll) {
     const calcPrice = calculatePrice(roll);
 
     // duplicates the cart content to the corresponding html elements
-    rollImageElement.src = 'assets/' + rolls[roll.type].imageFile; 
+    rollImageElement.src = 'assets/products/' + rolls[roll.type].imageFile; 
     rollTypeElement.innerText = roll.type + ' Cinnamon Roll'; 
     rollGlazingElement.innerText = 'Glazing: ' + roll.glazing; 
     rollPackElement.innerText = 'Pack Size: ' + roll.size; 

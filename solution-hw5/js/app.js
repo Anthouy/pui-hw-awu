@@ -65,7 +65,7 @@ function updateItem() {
 }
 
 function callingProperties() {
-    console.log(cart[1])
+    console.log(cart[1].type)
 }
 
 class CartItem {

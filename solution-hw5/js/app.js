@@ -54,8 +54,8 @@ function createItem() {
     popCart()
         for(index in cart) {
 
-            x = cart[x].basePrice + glazing;
-            y = x * amount;
+            a = cart[x].basePrice + glazing;
+            y = a * amount;
             individualItemCost = y
 
             let item = document.querySelector('#item-template');

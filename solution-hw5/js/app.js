@@ -53,7 +53,7 @@ function createItem() {
     let x = 0
     popCart()
         for(index in cart) {
-            a = cart[x].basePrice + glazing;
+            a = cart[x].basePrice + allCinnamon[x];
             y = a * amount;
             individualItemCost = y;
             let item = document.querySelector('#item-template');

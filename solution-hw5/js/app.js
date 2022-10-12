@@ -64,6 +64,10 @@ function updateItem() {
     item.content.querySelector('.cartdescriptionsmall').innerHTML = 'Original Cinnamon Roll<br>Glazing: Keep original<br>Pack Size: 1<br>'
 }
 
+function callingProperties() {
+    console.log(cart[1])
+}
+
 class CartItem {
     constructor(imageURL, cartdescript, calculatedprice) {
         this.itemImageURL = imageURL;

@@ -37,6 +37,13 @@ class Roll {
         this.glazing =  rollGlazing;
         this.size = packSize;
         this.basePrice = basePrice;
+
+        const removeLink = this.element.querySelector('.remove');
+        removeLink.onclick = this.deleteItem.bind(this);
+    }
+
+    deleteItem() {
+        this.element.remove();
     }
 }
 
@@ -58,6 +65,10 @@ function createItem() {
         document.querySelector('.carttotal').innerHTML = '$ ' + y.toFixed(2)
         console.log(y.toFixed(2))
     }
+
+function removeItem() {
+    cart.splice()
+}
 
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);

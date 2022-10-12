@@ -8,7 +8,6 @@ function addNewItem(rollType, rollGlazing, packSize, basePrice) {
     const item = new Roll(rollType, rollGlazing, packSize, basePrice, deleteExistingItem);
     itemListElement.prepend(item.element);
     itemSet.add(item);
-    return item;
 }
 
 function deleteExistingItem(item) {

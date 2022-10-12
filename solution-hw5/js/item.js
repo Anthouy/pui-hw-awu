@@ -16,7 +16,7 @@ class Roll {
         const clone = template.content.cloneNode(true);
         this.element = clone.querySelector('.topsection')
 
-        const btnDelete = this.element.querySelector('remove');
+        const btnDelete = this.element.querySelector('.remove');
         console.log(btnDelete);
         btnDelete.onclick = this.deleteNote.bind(this);
     };

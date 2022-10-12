@@ -47,7 +47,6 @@ function addNewItem(rollType, rollGlazing, packSize, basePrice) {
 }
 
 function createItem(item) {
-    const item = new Roll(rollType, rollGlazing, packSize, basePrice);
     const template = document.querySelector('#item-template')
     const clone = template.content.cloneNode(true);
 

@@ -63,6 +63,7 @@ function createItem() {
             console.log("Items Created");
             x++
         }
+        document.querySelector('carttotal').innerHTML = cart[0].basePrice + cart[1].basePrice + cart[2].basePrice + cart[3].basePrice
     }
 
 class CartItem {

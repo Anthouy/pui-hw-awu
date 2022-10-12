@@ -306,3 +306,45 @@ a:active {
 .btn-chkout:hover {
   background-color: #f3e62c;
 }
+
+#roll-list {
+  margin:0px 0px 20px 490px;
+  width:760px;
+}
+
+.cartcontent {
+  width:760px;
+  display:flex;
+}
+
+.cartleft {
+  width:140px;
+}
+
+.cartpic {
+  width:140px;
+  height:140px;
+  border:4px solid #000;
+}
+
+.cartlefttext {
+  font-size:12px;
+  padding:4px;
+  font-weight:bold;
+}
+
+.cartmid {
+  font-size:28px;
+  width:500px;
+}
+
+.midmargin {
+  margin:30px 10px 30px 40px;
+}
+
+.cartright {
+  font-size:40px;
+  text-align:right;
+  width:150px;
+  margin-left:-20px;
+}

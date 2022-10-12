@@ -7,7 +7,7 @@
     <script defer src="js/itemapp.js" type="module"></script>
   </head>
 
-  <body onpageshow="addNewItem()">
+  <body onpageshow="addNewItem ()">
 
     <header>
 
@@ -53,7 +53,28 @@
 
     <main>
 
-      <div id="item-list">
+      <div id="roll-list">
+        <template id="roll-template">
+          <div class="cartcontent">
+          <div class="cartleft">
+            <img class="cartpic" src="assets/original-cinnamon-roll.jpeg" alt="original cinnamon roll">
+            <div class="cartlefttext"><u>Remove</u></div>
+          </div>
+          <div class="cartmid">
+            <div class="midmargin">
+              <div class="cinnamon-roll">Original Cinnamon Roll</div>
+              <div class="glazing-option">Glazing: Keep original</div>
+              <div class="pack-size">Pack Size: 1</div>
+            </div>
+          </div>
+          <div class="cartright">
+            <div class="rightmargin">$ 2.49</div>
+            </div>
+          </div>
+        </template>
+      </div>
+
+      <!-- <div id="item-list">
 
         <template id="item-template">
 
@@ -91,7 +112,7 @@
 
         </template>
 
-      </div>
+      </div> -->
 
       <p class="solidcart"></p>
 

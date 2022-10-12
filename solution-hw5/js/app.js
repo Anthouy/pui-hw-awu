@@ -65,6 +65,7 @@ function removeItem() {
     if (child = document.querySelectorAll('.remove')[1]) {
         const element = document.querySelectorAll('#itemcard')[1];
         element.remove();
+        cart.splice(0, 1)
         y = cart[0].basePrice + cart[1].basePrice + cart[2].basePrice + cart[3].basePrice
         document.querySelector('.carttotal').innerHTML = '$ ' + y.toFixed(2)
         console.log(y.toFixed(2))
@@ -72,6 +73,7 @@ function removeItem() {
     else if (child = document.querySelectorAll('.remove')[2]) {
         const element = document.querySelectorAll('#itemcard')[2];
         element.remove();
+        cart.splice(1, 1)
         y = cart[0].basePrice + cart[1].basePrice + cart[2].basePrice + cart[3].basePrice
         document.querySelector('.carttotal').innerHTML = '$ ' + y.toFixed(2)
         console.log(y.toFixed(2))
@@ -79,6 +81,7 @@ function removeItem() {
     else if (child = document.querySelectorAll('.remove')[3]) {
         const element = document.querySelectorAll('#itemcard')[3];
         element.remove();
+        cart.splice(2, 1)
         y = cart[0].basePrice + cart[1].basePrice + cart[2].basePrice + cart[3].basePrice
         document.querySelector('.carttotal').innerHTML = '$ ' + y.toFixed(2)
         console.log(y.toFixed(2))
@@ -86,6 +89,7 @@ function removeItem() {
     else if (child = document.querySelectorAll('.remove')[4]) {
         const element = document.querySelectorAll('#itemcard')[4];
         element.remove();
+        cart.splice(3, 1)
         y = cart[0].basePrice + cart[1].basePrice + cart[2].basePrice + cart[3].basePrice
         document.querySelector('.carttotal').innerHTML = '$ ' + y.toFixed(2)
         console.log(y.toFixed(2))

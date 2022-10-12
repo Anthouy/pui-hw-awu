@@ -59,6 +59,10 @@ function createItem() {
         console.log(y.toFixed(2))
     }
 
+function removeItem() {
+    console.log('Working!')
+}
+
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');

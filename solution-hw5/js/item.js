@@ -18,13 +18,13 @@ class Roll {
 
         const btnDelete = this.element.querySelector('.remove');
         console.log(btnDelete);
-        btnDelete.onclick = this.deleteNote.bind(this);
+        btnDelete.onclick = this.deleteItem.bind(this);
     };
 
     updateItem(item) {
-        const itemImageElement = item.element.querySelector('.cinnamoncart');
-        const itemDescription = item.element.querySelector('.cartdescriptionsmall');
-        const itemPrice = item.element.querySelector('.cartdescription');
+        const itemImageElement = this.element.querySelector('.cinnamoncart');
+        const itemDescription = this.element.querySelector('.cartdescriptionsmall');
+        const itemPrice = this.element.querySelector('.cartdescription');
 
         itemImageElement.src = this.itemImageURL;
         itemDescription.innerText = this.itemDescription;

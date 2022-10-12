@@ -66,6 +66,9 @@ function updateItem() {
 
 function callingProperties() {
     console.log(cart[1].type)
+    console.log(cart[1].glazing)
+    console.log(cart[1].size)
+    console.log(cart[1].calculatedprice)
 }
 
 class CartItem {

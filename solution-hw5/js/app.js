@@ -50,7 +50,7 @@ function createItem(item) {
     const template = document.querySelector('#item-template')
     const clone = template.content.cloneNode(true);
 
-    item.element = clone.querySelector('.topsection');
+    .element = clone.querySelector('.topsection');
 
     const btnDelete = item.element.querySelector('.remove');
     console.log(btnDelete);

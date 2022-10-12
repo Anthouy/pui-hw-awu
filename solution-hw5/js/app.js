@@ -63,19 +63,19 @@ function removeItem() {
     console.log('Remove')
     let child = document.querySelectorAll('.remove')
     if (child == document.querySelectorAll('.remove')[1]) {
-        const element = document.querySelector('#itemcard:nth-child(1)');
+        const element = document.querySelectorAll('#itemcard:nth-child(1)');
         element.remove();
     }
     else if (child == document.querySelectorAll('.remove')[2]) {
-        const element = document.querySelector('#itemcard:nth-child(2)');
+        const element = document.querySelectorAll('#itemcard:nth-child(2)');
         element.remove();
     }
     else if (child == document.querySelectorAll('.remove')[3]) {
-        const element = document.querySelector('#itemcard:nth-child(3)');
+        const element = document.querySelectorAll('#itemcard:nth-child(3)');
         element.remove();
     }
     else if (child == document.querySelectorAll('.remove')[4]) {
-        const element = document.querySelector('#itemcard:nth-child(4)');
+        const element = document.querySelectorAll('#itemcard:nth-child(4)');
         element.remove();
     }
     }

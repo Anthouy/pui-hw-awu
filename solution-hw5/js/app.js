@@ -103,6 +103,11 @@ const itemFour = addNewItem(
     "10.47"
 );
 
+for (const item of itemSet) {
+    console.log(item);
+    createItem(item);
+}
+
 let cart = [];
 
 const queryString = window.location.search;

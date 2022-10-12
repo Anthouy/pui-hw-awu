@@ -39,7 +39,7 @@ class Roll {
         this.basePrice = basePrice;
 
         let item = document.querySelector('#item-template');
-        const btnDelete = this.item.content.querySelector('.remove');
+        const btnDelete = this.item.querySelector('.remove');
 
         btnDelete.onclick = this.deleteItem.bind(this);
     }

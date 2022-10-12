@@ -72,6 +72,10 @@ function deleteItem(item) {
     itemSet.delete(item);
 }
 
+const itemOne = addNewItem(
+    ""
+)
+
 let cart = [];
 
 const queryString = window.location.search;

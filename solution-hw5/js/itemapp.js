@@ -83,7 +83,6 @@ function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
     const roll = new Roll(rollType, rollGlazing, packSize, basePrice);
     rollSet.add(roll);
     return roll;
-    console.log(Array.from(rollSet));
 }
 
 // takes cart html and duplicates the template

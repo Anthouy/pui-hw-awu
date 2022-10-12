@@ -54,7 +54,7 @@ function createItem() {
             console.log("Items Created");
             x++
         }
-        y = cart[0].basePrice + cart[1].basePrice + cart[2].basePrice + cart[3].basePrice
+        y = cart.reduce((pv, cv) => pv + cv, 0);
         document.querySelector('.carttotal').innerHTML = '$ ' + y.toFixed(2)
         console.log(y.toFixed(2))
     }

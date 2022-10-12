@@ -235,13 +235,13 @@ function calculatePrice() {
 }
 
 // Calculation function for cart.
-// function calculatecartPrice() {
-//     a = rolls[cart[x].type].basePrice + rolls[cart[x].type].imageFile;
-//     if 
-//     y = a * allSize[1].priceMult;
-//     document.getElementById("totalcost").innerHTML = "$" + y.toFixed(2);
-//     console.log(y)
-// }
+function calculatecartPrice() {
+    a = rolls[cart[x].type].basePrice + rolls[cart[x].type].imageFile;
+    console.log(a)
+    y = a * allSize[1].priceMult;
+    document.getElementById("totalcost").innerHTML = "$" + y.toFixed(2);
+    console.log(y)
+}
 
 function addtoCart() {
     let cinnamonRoll = new Roll(rollType, rollGlazing, packSize, baserollsprice)

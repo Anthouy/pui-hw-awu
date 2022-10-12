@@ -55,7 +55,7 @@ function createItem() {
         for(index in cart) {
             let item = document.querySelector('#item-template');
             item.content.querySelector('.cartdescriptionsmall').innerHTML = cart[x].type + ' Cinnamon Roll<br>Glazing: ' + cart[x].glazing + '<br>Pack Size: ' + cart[x].size + '<br>'
-            item.content.querySelector('.itemprice').innerHTML = '<br>$ ' + cart[x].calculatedprice
+            item.content.querySelector('.itemprice').innerHTML = '<br>$ ' + cart[x].baserollsprice
             const template = document.querySelector('#item-template');
             const clone = template.content.cloneNode(true);
             document.querySelector('main').prepend(clone);
@@ -155,6 +155,7 @@ let amount = 1;
 
 let baserollsprice = rolls[rollType].basePrice;
 let rollimg = rolls[rollType].imageFile
+let itemroll = []
 document.getElementById("glazing").addEventListener("change", calculatePrice);
 document.getElementById("packsize").addEventListener("change", calculatePrice);
 console.log("Initialize Final Price on Next Click");
@@ -233,6 +234,13 @@ function calculatePrice() {
     console.log(y)
 }
 
+function calculateIndividualItem() {
+    x = baserollsprice + glazing;
+    y = x * amount;
+    document.getElementById("totalcost").innerHTML = "$" + y.toFixed(2);
+    console.log(y)
+}
+
 // Calculation function for cart.
 function calculatecartPrice() {
     let text = document.querySelector(".itemprice").innerHTML;
@@ -247,10 +255,10 @@ function addtoCart() {
 }
 
 function popCart() {
-    let cartitem1 = new Cartroll('Original', 'Sugar milk', 1, 2.49)
-    let cartitem2 = new Cartroll('Walnut', 'Vanilla milk', 12, 39.90)
-    let cartitem3 = new Cartroll('Raisin', 'Sugar milk', 3, 8.97)
-    let cartitem4 = new Cartroll('Apple', 'Original', 3, 10.47)
+    let cartitem1 = new Roll('Original', 'Sugar milk', 1, baserollsprice)
+    let cartitem2 = new Roll('Walnut', 'Vanilla milk', 12, baserollsprice)
+    let cartitem3 = new Roll('Raisin', 'Sugar milk', 3, baserollsprice)
+    let cartitem4 = new Roll('Apple', 'Original', 3, baserollsprice)
     cart.push(cartitem1, cartitem2, cartitem3, cartitem4)
     console.log(cart)
 }

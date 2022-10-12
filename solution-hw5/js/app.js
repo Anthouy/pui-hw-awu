@@ -236,11 +236,7 @@ function calculatePrice() {
 
 // Calculation function for cart.
 function calculatecartPrice() {
-    a = rolls[cart[x].type].basePrice + rolls[cart[x].type].imageFile;
-    console.log(a)
-    y = a * allSize[1].priceMult;
-    document.getElementById("totalcost").innerHTML = "$" + y.toFixed(2);
-    console.log(y)
+
 }
 
 function addtoCart() {
@@ -250,10 +246,10 @@ function addtoCart() {
 }
 
 function popCart() {
-    let cartitem1 = new Roll('Apple', 'Original', 3, 1)
-    let cartitem2 = new Roll('Raisin', 'Sugar milk', 3, 1)
-    let cartitem3 = new Roll('Walnut', 'Vanilla milk', 12, 1)
-    let cartitem4 = new Roll('Original', 'Sugar milk', 1, 1)
+    let cartitem1 = new Roll('Apple', 'Original', 3, 10.47)
+    let cartitem2 = new Roll('Raisin', 'Sugar milk', 3, 8.97)
+    let cartitem3 = new Roll('Walnut', 'Vanilla milk', 12, 39.90)
+    let cartitem4 = new Roll('Original', 'Sugar milk', 1, 2.49)
     cart.push(cartitem1, cartitem2, cartitem3, cartitem4)
     console.log(cart)
 }

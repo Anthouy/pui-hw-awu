@@ -174,3 +174,13 @@ function addtoCart() {
     cart.push(cinnamonRoll)
     console.log(cinnamonRoll)
 }
+
+function submitRoll() {
+    const cinnamonTitle = document.querySelector('.subtext');
+    const cinnamonGlaze = rollGlazing
+    const cinnamonPack = packSize
+
+    console.log(cinnamonTitle)
+    console.log(cinnamonGlaze)
+    console.log(cinnamonPack)
+}

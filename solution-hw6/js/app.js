@@ -179,8 +179,10 @@ function submitRoll() {
     const cinnamonTitle = document.querySelector('.subtext').innerHTML;
     const cinnamonGlaze = rollGlazing;
     const cinnamonPack = packSize;
+    const cinnamonPrice = document.querySelector('#totalcost').innerHTML;
 
     console.log(cinnamonTitle)
     console.log(cinnamonGlaze)
     console.log(cinnamonPack)
+    console.log(cinnamonPrice)
 }

@@ -375,6 +375,7 @@ function retrieveFromLocalStorage() {
     rollSet.add(element);
   })
   console.log(rollSet)
+  createElement(roll);
 }
 
 if (localStorage.getItem('storedRolls') != null) {

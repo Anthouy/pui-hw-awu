@@ -344,7 +344,7 @@ function submitRoll() {
   const cinnamonPack = packSize;
   const cinnamonPrice = document.querySelector('#totalcost').innerHTML;
 
-  const roll = addNewRoll(cinnamonTitle, cinnamonGlaze, cinnamonPack, cinnamonPrice);
+  const roll = new Roll(cinnamonTitle, cinnamonGlaze, cinnamonPack, cinnamonPrice);
 
   saveToLocalStorage();
 

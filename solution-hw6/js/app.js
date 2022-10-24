@@ -375,6 +375,7 @@ function retrieveFromLocalStorage() {
     rollSet.add(element);
   })
   console.log(rollSet)
+  const roll = addNewRoll(cinnamonTitle, cinnamonGlaze, cinnamonPack, cinnamonPrice);
   createElement(roll);
 }
 

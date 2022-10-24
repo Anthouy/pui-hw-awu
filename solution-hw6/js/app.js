@@ -4,7 +4,7 @@ class Roll {
         this.type = rollType; 
         this.glazing = rollGlazing;
         this.size = packSize;
-        this.basePrice = basePrice.toFixed(2);
+        this.basePrice = basePrice;
 
         this.element = null;
     }
@@ -101,7 +101,7 @@ let rollGlazing = "";
 let packSize = "";
 let glazing = 0;
 let amount = 1;
-let baserollsprice = rolls[rollType].basePrice;
+let baserollsprice = rolls[rollType].basePrice.toFixed(2);
 let basePrice = rolls[rollType].basePrice;
 let rollimg = rolls[rollType].imageFile
 document.getElementById("glazing").addEventListener("change", calculatePrice);

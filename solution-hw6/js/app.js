@@ -1,3 +1,15 @@
+class Roll { 
+    // creates a roll class
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType; 
+        this.glazing = rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice.toFixed(2);
+
+        this.element = null;
+    }
+}
+
 console.log("rollsData Load Check");
 
 const rolls = {
@@ -95,18 +107,6 @@ let rollimg = rolls[rollType].imageFile
 document.getElementById("glazing").addEventListener("change", calculatePrice);
 document.getElementById("packsize").addEventListener("change", calculatePrice);
 console.log("Initialize Final Price on Next Click");
-
-class Roll { 
-    // creates a roll class
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType; 
-        this.glazing = rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice.toFixed(2);
-
-        this.element = null;
-    }
-}
 
 // Function for detecting change.
 function glazingChange() {

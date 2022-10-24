@@ -29,8 +29,6 @@ const rolls = {
 
 let cart = [];
 
-const rollSet = new Set();
-
 class Roll { 
     // creates a roll class
     constructor(rollType, rollGlazing, packSize, basePrice) {
@@ -104,7 +102,6 @@ let packSize = "";
 let glazing = 0;
 let amount = 1;
 let baserollsprice = rolls[rollType].basePrice;
-let basePrice = rolls[rollType].basePrice;
 let rollimg = rolls[rollType].imageFile
 document.getElementById("glazing").addEventListener("change", calculatePrice);
 document.getElementById("packsize").addEventListener("change", calculatePrice);
@@ -194,26 +191,6 @@ function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
     const roll = new Roll(rollType, rollGlazing, packSize, basePrice);
     rollSet.add(roll);
     return roll;
-}
-
-function createElement(roll) {
-    const template = document.querySelector('#roll-template');
-    const clone = template.content.cloneNode(true);
-
-    roll.element = clone.querySelector('.cartcontent');
-    
-    // taken and modified from lab 5
-    const btnDelete = roll.element.querySelector('.cartlefttext');
-    btnDelete.addEventListener('click', () => {
-        deleteElement(roll);
-      });
-
-    // add roll clone to the dom
-    const rollListElement = document.querySelector('#roll-list');
-    rollListElement.append(roll.element);
-
-    // populate roll clone with cart content
-    updateElement(roll);
 }
 
 function submitRoll() {

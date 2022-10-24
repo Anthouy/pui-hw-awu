@@ -85,7 +85,7 @@ for(index in allSize) {
 }
 
 // Initial global variables for price calculation.
-const rollGlazing = "";
+let rollGlazing = "";
 let packSize = "";
 let glazing = 0;
 let amount = 1;

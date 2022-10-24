@@ -27,6 +27,18 @@ const rolls = {
     }    
 };
 
+class Roll { 
+    // creates a roll class
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType; 
+        this.glazing = rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice.toFixed(2);
+
+        this.element = null;
+    }
+}
+
 let cart = [];
 
 const queryString = window.location.search;

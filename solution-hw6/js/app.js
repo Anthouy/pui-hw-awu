@@ -10,6 +10,9 @@ class Roll {
     }
 }
 
+// creates an empty set to represent cart
+const rollSet = new Set();
+
 console.log("rollsData Load Check");
 
 const rolls = {
@@ -227,9 +230,6 @@ let allGlazing = [
       priceAdaptation: 10,
     }
   ];
-
-// creates an empty set to represent cart
-const rollSet = new Set();
 
 // creates new roll objects and adds it to set
 function addNewRoll(rollType, rollGlazing, packSize, basePrice) {

@@ -362,6 +362,7 @@ function saveToLocalStorage() {
   console.log(rollArrayString);
 
   localStorage.setItem('storedRolls', rollArrayString);
+  console.log("Save To Local Storage");
 }
 
 function retrieveFromLocalStorage() {
@@ -371,7 +372,9 @@ function retrieveFromLocalStorage() {
   for (const rollData of rollArray) {
       const roll = addNewRoll(rollData.cinnamonTitle, rollData.cinnamonGlaze, rollData.cinnamonPack, rollData.cinnamonPrice);
       createElement(roll);
+      console.log("Roll Created");
   }
+  console.log("Retrieve From Local Storage");
 }
 
 if (localStorage.getItem('storedRolls') != null) {

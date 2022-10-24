@@ -12,6 +12,8 @@ class Roll {
 
 // creates an empty set to represent cart
 const rollSet = new Set();
+//so when page loads to another cinnamon roll, add previous lcoal storage to set.
+//Look at lab 6 code
 
 console.log("rollsData Load Check");
 

@@ -257,6 +257,7 @@ function createElement(roll) {
 
     // populate roll clone with cart content
     updateElement(roll);
+    console.log("createElement");
 }
 
 function updateElement(roll) {
@@ -308,6 +309,7 @@ function deleteElement(roll) {
     rollSet.delete(roll);
     cartTotalPrice();
     saveToLocalStorage();
+    console.log("Roll Deleted");
 }
 
 // creates four roll objects and add them to rollSet

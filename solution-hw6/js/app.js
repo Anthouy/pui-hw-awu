@@ -54,6 +54,18 @@ function updateDetail() {
     console.log("Detail Price Update")
 }
 
+class Roll { 
+    // creates a roll class
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType; 
+        this.glazing = rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice.toFixed(2);
+
+        this.element = null;
+    }
+}
+
 console.log("Load Check");
 
 // Array of cinnamon glazing options and price adjustments.
@@ -82,18 +94,6 @@ let selectSize = document.getElementById("packsize")
 for(index in allSize) {
     selectSize.options[selectSize.options.length] = new Option(allSize[index].cinnCount);
     console.log("Populating Pack Size Menu")
-}
-
-class Roll { 
-    // creates a roll class
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType; 
-        this.glazing = rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice.toFixed(2);
-
-        this.element = null;
-    }
 }
 
 // Initial global variables for price calculation.

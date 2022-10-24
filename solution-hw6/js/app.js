@@ -29,6 +29,8 @@ const rolls = {
 
 let cart = [];
 
+const rollSet = new Set();
+
 class Roll { 
     // creates a roll class
     constructor(rollType, rollGlazing, packSize, basePrice) {

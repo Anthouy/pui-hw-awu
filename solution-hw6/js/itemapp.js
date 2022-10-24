@@ -154,18 +154,19 @@ function deleteElement(roll) {
     roll.element.remove();
     rollSet.delete(roll);
     cartTotalPrice();
+    saveToLocalStorage();
 }
 
 // creates four roll objects and add them to rollSet
-const rollOne = addNewRoll( "Original", "Sugar Milk", 1, 2.49);
-const rollTwo = addNewRoll( "Walnut", "Vanilla Milk", 12, 3.99);
-const rollThree = addNewRoll( "Raisin", "Sugar Milk", 3, 2.99);
-const rollFour = addNewRoll( "Apple", "Original", 3, 3.49);
+// const rollOne = addNewRoll( "Original", "Sugar Milk", 1, 2.49);
+// const rollTwo = addNewRoll( "Walnut", "Vanilla Milk", 12, 3.99);
+// const rollThree = addNewRoll( "Raisin", "Sugar Milk", 3, 2.99);
+// const rollFour = addNewRoll( "Apple", "Original", 3, 3.49);
 
 // adds individual roll to list of rolls
-for (const roll of rollSet) { 
-    createElement(roll);
-}
+// for (const roll of rollSet) { 
+//     createElement(roll);
+// }
 
 // calculates the total checkout price
 function cartTotalPrice() {

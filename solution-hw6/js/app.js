@@ -181,8 +181,37 @@ function submitRoll() {
     const cinnamonPack = packSize;
     const cinnamonPrice = document.querySelector('#totalcost').innerHTML;
 
+    const roll = addNewRoll(rollType, rollGlazing, packSize, basePrice);
+    createElement(roll);
+
+    saveToLocalStorage();
+
     console.log(cinnamonTitle)
     console.log(cinnamonGlaze)
     console.log(cinnamonPack)
     console.log(cinnamonPrice)
+}
+
+function saveToLocalStorage() {
+    rollArray = Array.from(rollSet);
+    console.log(rollArray);
+
+    const rollArrayString = JSON.stringify(rollArray);
+    console.log(rollArrayString);
+
+    localStorage.setItem('storedRolls', rollArrayString);
+}
+
+function retrieveFromLocalStorage() {
+    const rollArrayString = localStorage.getItem('storedRolls');
+    const rollArray = JSON.parse(rollArrayString);
+    console.log(rollArray)
+    for (const rollData of rollArray) {
+        const roll = addNewRoll(rollType, rollGlazing, packSize, basePrice);
+        createElement(roll);
+    }
+}
+
+if (localStorage.getItem('storedRolls') != null) {
+    retrieveFromLocalStorage();
 }

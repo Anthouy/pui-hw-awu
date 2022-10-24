@@ -27,6 +27,8 @@ const rolls = {
     }    
 };
 
+let cart = [];
+
 class Roll { 
     // creates a roll class
     constructor(rollType, rollGlazing, packSize, basePrice) {

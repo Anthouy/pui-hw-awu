@@ -353,7 +353,7 @@ function submitRoll() {
   console.log(cinnamonPack)
   console.log(cinnamonPrice)
 
-  console.log("Submitted Note!")
+  console.log("Roll Added To Cart!")
 }
 
 function saveToLocalStorage() {

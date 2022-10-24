@@ -368,7 +368,7 @@ function retrieveFromLocalStorage() {
   const rollArrayString = localStorage.getItem('storedRolls');
   const rollArray = JSON.parse(rollArrayString);
   console.log(rollArray)
-  for (index in rollArray) {
+  for (const roll of rollArray) {
       const roll = addNewRoll(rollType, rollGlazing, packSize, basePrice);
       createElement(roll);
   }

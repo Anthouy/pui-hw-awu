@@ -84,18 +84,6 @@ for(index in allSize) {
     console.log("Populating Pack Size Menu")
 }
 
-// Initial global variables for price calculation.
-let rollGlazing = "";
-let packSize = "";
-let glazing = 0;
-let amount = 1;
-let baserollsprice = rolls[rollType].basePrice;
-let basePrice = rolls[rollType].basePrice;
-let rollimg = rolls[rollType].imageFile
-document.getElementById("glazing").addEventListener("change", calculatePrice);
-document.getElementById("packsize").addEventListener("change", calculatePrice);
-console.log("Initialize Final Price on Next Click");
-
 class Roll { 
     // creates a roll class
     constructor(rollType, rollGlazing, packSize, basePrice) {
@@ -107,6 +95,18 @@ class Roll {
         this.element = null;
     }
 }
+
+// Initial global variables for price calculation.
+let rollGlazing = "";
+let packSize = "";
+let glazing = 0;
+let amount = 1;
+let baserollsprice = rolls[rollType].basePrice;
+let basePrice = rolls[rollType].basePrice;
+let rollimg = rolls[rollType].imageFile
+document.getElementById("glazing").addEventListener("change", calculatePrice);
+document.getElementById("packsize").addEventListener("change", calculatePrice);
+console.log("Initialize Final Price on Next Click");
 
 // Function for detecting change.
 function glazingChange() {

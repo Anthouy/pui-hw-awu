@@ -15,6 +15,44 @@ const rollSet = new Set();
 
 console.log("rollsData Load Check");
 
+let allGlazing = [
+    {
+      glazing: 'Keep Original',
+      price: 0.00,
+    },
+    {
+      glazing: 'Sugar Milk',
+      price: 0.00,
+    },
+    {
+      glazing: 'Vanilla Milk',
+      price: 0.50,
+    },
+    {
+      glazing: 'Double Chocolate',
+      price: 1.50,
+    },
+  ];
+
+  let allPackSize = [
+    {
+      packSize: 1,
+      priceAdaptation: 1,
+    },
+    {
+      packSize: 3,
+      priceAdaptation: 3,
+    },
+    {
+      packSize: 6,
+      priceAdaptation: 5,
+    },
+    {
+      packSize: 12,
+      priceAdaptation: 10,
+    }
+  ];
+
 const rolls = {
     "Original": {
         "basePrice": 2.49,
@@ -192,44 +230,6 @@ function addtoCart() {
 }
 
 //Item App Below...
-
-let allGlazing = [
-    {
-      glazing: 'Keep Original',
-      price: 0.00,
-    },
-    {
-      glazing: 'Sugar Milk',
-      price: 0.00,
-    },
-    {
-      glazing: 'Vanilla Milk',
-      price: 0.50,
-    },
-    {
-      glazing: 'Double Chocolate',
-      price: 1.50,
-    },
-  ];
-
-  let allPackSize = [
-    {
-      packSize: 1,
-      priceAdaptation: 1,
-    },
-    {
-      packSize: 3,
-      priceAdaptation: 3,
-    },
-    {
-      packSize: 6,
-      priceAdaptation: 5,
-    },
-    {
-      packSize: 12,
-      priceAdaptation: 10,
-    }
-  ];
 
 // creates new roll objects and adds it to set
 function addNewRoll(rollType, rollGlazing, packSize, basePrice) {

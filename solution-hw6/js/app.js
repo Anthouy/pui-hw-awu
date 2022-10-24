@@ -187,6 +187,12 @@ function addtoCart() {
     console.log(cinnamonRoll)
 }
 
+function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
+    const roll = new Roll(rollType, rollGlazing, packSize, basePrice);
+    rollSet.add(roll);
+    return roll;
+}
+
 function submitRoll() {
     const cinnamonTitle = document.querySelector('.subtext').innerHTML;
     const cinnamonGlaze = rollGlazing;

@@ -219,7 +219,7 @@ function packChange() {
 function calculatePrice() {
     x = baserollsprice + glazing;
     y = x * amount;
-    document.getElementById("totalcost").innerHTML = "$" + y;
+    document.getElementById("totalcost").innerHTML = "$" + y.toFixed(2);
     console.log(y)
 }
 

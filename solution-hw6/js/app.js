@@ -351,6 +351,8 @@ function submitRoll() {
   console.log(cinnamonGlaze)
   console.log(cinnamonPack)
   console.log(cinnamonPrice)
+
+  console.log("Submitted Note!")
 }
 
 function saveToLocalStorage() {

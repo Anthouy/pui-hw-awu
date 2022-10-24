@@ -29,18 +29,6 @@ const rolls = {
 
 let cart = [];
 
-class Roll { 
-    // creates a roll class
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType; 
-        this.glazing = rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice.toFixed(2);
-
-        this.element = null;
-    }
-}
-
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');
@@ -185,51 +173,4 @@ function addtoCart() {
     let cinnamonRoll = new Roll(rollType, rollGlazing, packSize, baserollsprice)
     cart.push(cinnamonRoll)
     console.log(cinnamonRoll)
-}
-
-function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
-    const roll = new Roll(rollType, rollGlazing, packSize, basePrice);
-    rollSet.add(roll);
-    return roll;
-}
-
-function submitRoll() {
-    const cinnamonTitle = document.querySelector('.subtext').innerHTML;
-    const cinnamonGlaze = rollGlazing;
-    const cinnamonPack = packSize;
-    const cinnamonPrice = document.querySelector('#totalcost').innerHTML;
-
-    const roll = addNewRoll(rollType, rollGlazing, packSize, basePrice);
-    createElement(roll);
-
-    saveToLocalStorage();
-
-    console.log(cinnamonTitle)
-    console.log(cinnamonGlaze)
-    console.log(cinnamonPack)
-    console.log(cinnamonPrice)
-}
-
-function saveToLocalStorage() {
-    rollArray = Array.from(rollSet);
-    console.log(rollArray);
-
-    const rollArrayString = JSON.stringify(rollArray);
-    console.log(rollArrayString);
-
-    localStorage.setItem('storedRolls', rollArrayString);
-}
-
-function retrieveFromLocalStorage() {
-    const rollArrayString = localStorage.getItem('storedRolls');
-    const rollArray = JSON.parse(rollArrayString);
-    console.log(rollArray)
-    for (const rollData of rollArray) {
-        const roll = addNewRoll(rollType, rollGlazing, packSize, basePrice);
-        createElement(roll);
-    }
-}
-
-if (localStorage.getItem('storedRolls') != null) {
-    retrieveFromLocalStorage();
 }

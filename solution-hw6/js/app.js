@@ -279,6 +279,7 @@ function updateElement(roll) {
     rollPackElement.innerText = 'Pack Size: ' + roll.size; 
     rollPriceElement.innerText = '$ ' + calcPrice;
     console.log(rollImageElement.src)
+    console.log(roll)
 }
 
 // calculates total price of each roll selection with glaze + pack size modifications

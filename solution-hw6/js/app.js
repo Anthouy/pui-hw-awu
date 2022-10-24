@@ -371,13 +371,10 @@ function retrieveFromLocalStorage() {
   const rollArrayString = localStorage.getItem('storedRolls');
   const rollArray = JSON.parse(rollArrayString);
   console.log(rollArray)
-  rollSet.add(rollArray);
-  for (const rollData of rollArray) {
-      const roll = addNewRoll(rollData.cinnamonTitle, rollData.cinnamonGlaze, rollData.cinnamonPack, rollData.cinnamonPrice);
-      console.log(roll)
-      createElement(roll);
-  }
-  console.log("Retrieve From Local Storage");
+  rollArray.forEach(element => {
+    rollSet.add(element);
+  })
+  console.log(rollSet)
 }
 
 if (localStorage.getItem('storedRolls') != null) {

@@ -343,7 +343,6 @@ function submitRoll() {
   const cinnamonPrice = document.querySelector('#totalcost').innerHTML;
 
   const roll = addNewRoll(rollType, rollGlazing, packSize, basePrice);
-  createElement(roll);
 
   saveToLocalStorage();
 

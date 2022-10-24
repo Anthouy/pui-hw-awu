@@ -342,7 +342,7 @@ function submitRoll() {
   const cinnamonPack = packSize;
   const cinnamonPrice = document.querySelector('#totalcost').innerHTML;
 
-  const roll = addNewRoll(rollType, rollGlazing, packSize, basePrice);
+  const roll = addNewRoll(cinnamonTitle, cinnamonGlaze, cinnamonPack, cinnamonPrice);
 
   saveToLocalStorage();
 
@@ -368,8 +368,8 @@ function retrieveFromLocalStorage() {
   const rollArrayString = localStorage.getItem('storedRolls');
   const rollArray = JSON.parse(rollArrayString);
   console.log(rollArray)
-  for (const roll of rollArray) {
-      const roll = addNewRoll(rollType, rollGlazing, packSize, basePrice);
+  for (const rollData of rollArray) {
+      const roll = addNewRoll(rollData.cinnamonTitle, rollData.cinnamonGlaze, rollData.cinnamonPack, rollData.cinnamonPrice);
       createElement(roll);
   }
 }

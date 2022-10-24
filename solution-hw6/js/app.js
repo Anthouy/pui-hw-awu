@@ -29,6 +29,18 @@ const rolls = {
 
 let cart = [];
 
+class Roll { 
+    // creates a roll class
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType; 
+        this.glazing = rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice.toFixed(2);
+
+        this.element = null;
+    }
+}
+
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');
@@ -215,18 +227,6 @@ let allGlazing = [
       priceAdaptation: 10,
     }
   ];
-
-class Roll { 
-    // creates a roll class
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType; 
-        this.glazing = rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice.toFixed(2);
-
-        this.element = null;
-    }
-}
 
 // creates an empty set to represent cart
 const rollSet = new Set();

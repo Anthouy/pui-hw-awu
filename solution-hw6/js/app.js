@@ -373,8 +373,8 @@ function retrieveFromLocalStorage() {
   console.log(rollArray)
   for (const rollData of rollArray) {
       const roll = addNewRoll(rollData.cinnamonTitle, rollData.cinnamonGlaze, rollData.cinnamonPack, rollData.cinnamonPrice);
+      console.log(roll)
       createElement(roll);
-      console.log("Roll Created");
   }
   console.log("Retrieve From Local Storage");
 }

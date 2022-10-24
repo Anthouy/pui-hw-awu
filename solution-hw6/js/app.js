@@ -104,6 +104,7 @@ let packSize = "";
 let glazing = 0;
 let amount = 1;
 let baserollsprice = rolls[rollType].basePrice;
+let basePrice = rolls[rollType].basePrice;
 let rollimg = rolls[rollType].imageFile
 document.getElementById("glazing").addEventListener("change", calculatePrice);
 document.getElementById("packsize").addEventListener("change", calculatePrice);

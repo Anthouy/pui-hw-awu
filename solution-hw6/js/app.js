@@ -239,7 +239,7 @@ function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
 }
 
 // takes cart html and duplicates the template
-function createElement(object) {
+function createElement(roll) {
     const template = document.querySelector('#roll-template');
     const clone = template.content.cloneNode(true);
 

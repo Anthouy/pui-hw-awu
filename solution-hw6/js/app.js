@@ -54,20 +54,6 @@ function updateDetail() {
     console.log("Detail Price Update")
 }
 
-let basePrice = rolls[rollType].basePrice;
- 
-class Roll { 
-    // creates a roll class
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType; 
-        this.glazing = rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice.toFixed(2);
-
-        this.element = null;
-    }
-}
-
 console.log("Load Check");
 
 // Array of cinnamon glazing options and price adjustments.
@@ -104,11 +90,23 @@ let packSize = "";
 let glazing = 0;
 let amount = 1;
 let baserollsprice = rolls[rollType].basePrice;
-
+let basePrice = rolls[rollType].basePrice;
 let rollimg = rolls[rollType].imageFile
 document.getElementById("glazing").addEventListener("change", calculatePrice);
 document.getElementById("packsize").addEventListener("change", calculatePrice);
 console.log("Initialize Final Price on Next Click");
+
+class Roll { 
+    // creates a roll class
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType; 
+        this.glazing = rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice.toFixed(2);
+
+        this.element = null;
+    }
+}
 
 // Function for detecting change.
 function glazingChange() {

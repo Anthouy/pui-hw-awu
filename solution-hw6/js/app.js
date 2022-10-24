@@ -375,7 +375,7 @@ function retrieveFromLocalStorage() {
     rollSet.add(element);
   })
   console.log(rollSet)
-  const roll = addNewRoll(type, glazing, size, basePrice);
+  const roll = addNewRoll(rollType, rollGlazing, packSize, basePrice);
   createElement(roll);
 }
 

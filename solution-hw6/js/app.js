@@ -339,7 +339,7 @@ function cartTotalPrice() {
 cartTotalPrice();
 
 function submitRoll() {
-  const cinnamonTitle = document.querySelector('.subtext').innerHTML;
+  const cinnamonTitle = document.querySelector('.subtext').innerHTML.replace(' Cinnamon Roll','');
   const cinnamonGlaze = rollGlazing;
   const cinnamonPack = packSize;
   const cinnamonPrice = document.querySelector('#totalcost').innerHTML;

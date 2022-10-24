@@ -13,8 +13,6 @@ class Roll {
 // creates an empty set to represent cart
 const rollSet = new Set();
 
-console.log("rollsData Load Check");
-
 const rolls = {
     "Original": {
         "basePrice": 2.49,
@@ -41,6 +39,8 @@ const rolls = {
         "imageFile": "strawberry-cinnamon-roll.jpg"
     }    
 };
+
+console.log("rollsData Load Check");
 
 let allGlazing = [
     {

@@ -196,6 +196,26 @@ function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
     return roll;
 }
 
+function createElement(roll) {
+    const template = document.querySelector('#roll-template');
+    const clone = template.content.cloneNode(true);
+
+    roll.element = clone.querySelector('.cartcontent');
+    
+    // taken and modified from lab 5
+    const btnDelete = roll.element.querySelector('.cartlefttext');
+    btnDelete.addEventListener('click', () => {
+        deleteElement(roll);
+      });
+
+    // add roll clone to the dom
+    const rollListElement = document.querySelector('#roll-list');
+    rollListElement.append(roll.element);
+
+    // populate roll clone with cart content
+    updateElement(roll);
+}
+
 function submitRoll() {
     const cinnamonTitle = document.querySelector('.subtext').innerHTML;
     const cinnamonGlaze = rollGlazing;

@@ -375,6 +375,7 @@ function retrieveFromLocalStorage() {
   console.log(rollArray)
   rollArray.forEach(element => {
     rollSet.add(element);
+    console.log(element);
   })
   console.log(rollSet)
   const roll = addNewRoll(rollType, rollGlazing, packSize, basePrice);

@@ -386,6 +386,10 @@ function retrievePreviousLocalStorage() {
     const rollArrayString = localStorage.getItem('storedRolls');
     const rollArray = JSON.parse(rollArrayString);
     console.log(rollArray)
+    rollArray.forEach(element => {
+        console.log(element);
+        const roll = addNewRoll(element['type'], element['glazing'], element['size'], element['basePrice']);
+      })
     console.log(rollSet)
 }
 

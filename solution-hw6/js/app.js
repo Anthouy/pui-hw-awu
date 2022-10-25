@@ -277,7 +277,7 @@ function updateElement(roll) {
     rollTypeElement.innerText = roll.type + ' Cinnamon Roll'; 
     rollGlazingElement.innerText = 'Glazing: ' + roll.glazing; 
     rollPackElement.innerText = 'Pack Size: ' + roll.size; 
-    rollPriceElement.innerText = roll.basePrice;
+    rollPriceElement.innerText = "$" + roll.basePrice;
     console.log(rollImageElement.src)
     console.log(roll)
 }
@@ -301,11 +301,7 @@ function rcalculatePrice(roll) {
     }
 
     // calculates price based up glaze + pack size changes
-    let calculatedPrice = (parseInt(roll.basePrice.replace('$', '')) + glazingChange) * packChange;
-
-    //parseInt(roll.basePrice.replace('$', ''), 10)
-
-    //roll.basePrice
+    let calculatedPrice = (roll.basePrice + glazingChange) * packChange;
 
     return calculatedPrice.toFixed(2);
 }

@@ -392,7 +392,7 @@ function retrievePreviousLocalStorage() {
     console.log(rollArray)
     rollArray.forEach(element => {
         console.log(element);
-        const roll = addNewRoll(element['type'], element['glazing'], element['size'], Number(parseFloat(element['basePrice'].replace("$","")).toFixed(2)));
+        const roll = addNewRoll(element['type'], element['glazing'], Number(element['size']), Number(parseFloat(element['basePrice'].replace("$","")).toFixed(2)));
       })
     console.log(rollSet)
 }

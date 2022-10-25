@@ -329,6 +329,7 @@ function deleteElement(roll) {
 // calculates the total checkout price
 function cartTotalPrice() {
     let totalPrice = document.querySelector('.carttotal:nth-child(2)');
+    console.log(totalPrice)
     let price = 0;
 
     for(const roll of rollSet) {

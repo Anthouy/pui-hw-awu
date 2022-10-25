@@ -302,7 +302,7 @@ function rcalculatePrice(roll) {
 
     // calculates price based up glaze + pack size changes
     console.log(roll.basePrice)
-    let calculatedPrice = (roll.basePrice + glazingChange) * packChange;
+    let calculatedPrice = roll.basePrice
 
     return calculatedPrice.toFixed(2);
 }

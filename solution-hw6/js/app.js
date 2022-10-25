@@ -371,7 +371,7 @@ function saveToLocalStorage() {
 }
 
 //parseInt(string.replace(",",""))
-//parseInt(element['basePrice'].replace("$",""))
+//parseInt(element['basePrice'].replace("$","")).toFixed(2)
 
 function retrieveFromLocalStorage() {
   const rollArrayString = localStorage.getItem('storedRolls');
@@ -379,7 +379,7 @@ function retrieveFromLocalStorage() {
   console.log(rollArray)
   rollArray.forEach(element => {
     console.log(element);
-    const roll = addNewRoll(element['type'], element['glazing'], element['size'], parseInt(element['basePrice'].replace("$","")));
+    const roll = addNewRoll(element['type'], element['glazing'], element['size'], parseInt(element['basePrice'].replace("$","")).toFixed(2));
     createElement(roll);
   })
   console.log(rollSet)
@@ -391,7 +391,7 @@ function retrievePreviousLocalStorage() {
     console.log(rollArray)
     rollArray.forEach(element => {
         console.log(element);
-        const roll = addNewRoll(element['type'], element['glazing'], element['size'], parseInt(element['basePrice'].replace("$","")));
+        const roll = addNewRoll(element['type'], element['glazing'], element['size'], parseInt(element['basePrice'].replace("$","")).toFixed(2));
       })
     console.log(rollSet)
 }

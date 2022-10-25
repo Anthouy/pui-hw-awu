@@ -329,7 +329,6 @@ function deleteElement(roll) {
 // calculates the total checkout price
 function cartTotalPrice() {
     let totalPrice = document.querySelector('.carttotal:nth-child(2)');
-    console.log(totalPrice)
     let price = 0;
 
     for(const roll of rollSet) {
@@ -381,7 +380,7 @@ function retrieveFromLocalStorage() {
   console.log(rollArray)
   rollArray.forEach(element => {
     console.log(element);
-    const roll = addNewRoll(element['type'], element['glazing'], Number(element['size']), Number(parseFloat(element['basePrice'].replace("$","")).toFixed(2)));
+    const roll = addNewRoll(element['type'], element['glazing'], element['size'], parseFloat(element['basePrice'].replace("$","")).toFixed(2));
     createElement(roll);
   })
   console.log(rollSet)
@@ -393,7 +392,7 @@ function retrievePreviousLocalStorage() {
     console.log(rollArray)
     rollArray.forEach(element => {
         console.log(element);
-        const roll = addNewRoll(element['type'], element['glazing'], Number(element['size']), Number(parseFloat(element['basePrice'].replace("$","")).toFixed(2)));
+        const roll = addNewRoll(element['type'], element['glazing'], element['size'], parseFloat(element['basePrice'].replace("$","")).toFixed(2));
       })
     console.log(rollSet)
 }

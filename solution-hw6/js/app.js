@@ -289,14 +289,14 @@ function rcalculatePrice(roll) {
     let glazingChange = 0;
     for(const glazing of allGlazing) {
         if(glazing.packSize == roll.glazing) {
-            glazingChange = glazing.price;
+            glazingChange = 0;
         }
     }
 
     let packChange = 0;
     for(const pack of allPackSize) {
         if(pack.packSize == roll.size) {
-            packChange = pack.priceAdaptation;
+            packChange = 1;
         }
     }
 

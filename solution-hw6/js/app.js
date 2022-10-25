@@ -382,6 +382,13 @@ function retrieveFromLocalStorage() {
   console.log(rollSet)
 }
 
+function retrievePreviousLocalStorage() {
+    const rollArrayString = localStorage.getItem('storedRolls');
+    const rollArray = JSON.parse(rollArrayString);
+    console.log(rollArray)
+    console.log(rollSet)
+}
+
 if (localStorage.getItem('storedRolls') != null) {
   retrieveFromLocalStorage();
 }

@@ -360,7 +360,6 @@ function submitRoll() {
 }
 
 function saveToLocalStorage() {
-  retrieveFromLocalStorage()
   rollArray = Array.from(rollSet);
   console.log(rollArray);
 

@@ -270,8 +270,7 @@ function updateElement(roll) {
     const rollPackElement = roll.element.querySelector(".pack-size"); 
     const rollPriceElement = roll.element.querySelector(".rightmargin");
 
-    const calcPrice = newCalcPrice(roll);
-    //const calcPrice = rcalculatePrice(roll);
+    const calcPrice = rcalculatePrice(roll);
 
     // duplicates the cart content to the corresponding html elements
     rollImageElement.src = 'assets/products/' + rolls[roll.type].imageFile; 
@@ -284,31 +283,26 @@ function updateElement(roll) {
 }
 
 // calculates total price of each roll selection with glaze + pack size modifications
-// function rcalculatePrice(roll) {
+function rcalculatePrice(roll) {
     // iterates through allGlazing to find if same glaze as roll's
     // sets the glazingChange to the price difference
-    // let glazingChange = 0;
-    // for(const glazing of allGlazing) {
-    //     if(glazing.packSize == roll.glazing) {
-    //         glazingChange = glazing.price;
-    //     }
-    // }
+    let glazingChange = 0;
+    for(const glazing of allGlazing) {
+        if(glazing.packSize == roll.glazing) {
+            glazingChange = glazing.price;
+        }
+    }
 
-    // let packChange = 0;
-    // for(const pack of allPackSize) {
-    //     if(pack.packSize == roll.size) {
-    //         packChange = pack.priceAdaptation;
-    //     }
-    // }
+    let packChange = 0;
+    for(const pack of allPackSize) {
+        if(pack.packSize == roll.size) {
+            packChange = pack.priceAdaptation;
+        }
+    }
 
     // calculates price based up glaze + pack size changes
-//     let calculatedPrice = (roll.basePrice + glazingChange) * packChange;
+    let calculatedPrice = (roll.basePrice + glazingChange) * packChange;
 
-//     return calculatedPrice.toFixed(2);
-// }
-
-function newCalcPrice(roll) {
-    let calculatedPrice = roll.basePrice
     return calculatedPrice.toFixed(2);
 }
 
@@ -316,8 +310,7 @@ function newCalcPrice(roll) {
 function deleteElement(roll) {
     roll.element.remove();
     rollSet.delete(roll);
-    newCartTotalPrice();
-    //cartTotalPrice();
+    cartTotalPrice();
     saveToLocalStorage();
     console.log("Roll Deleted");
 }
@@ -333,35 +326,21 @@ function deleteElement(roll) {
 //     createElement(roll);
 // }
 
-function newCartTotalPrice() {
+// calculates the total checkout price
+function cartTotalPrice() {
     console.log("Calculating Price...")
     let totalPrice = document.querySelector('.carttotal:nth-child(2)');
     let price = 0;
 
     for(const roll of rollSet) {
-        price = price + parseFloat(newCalcPrice(roll));
+        price = price + parseFloat(rcalculatePrice(roll));
     }
 
     totalPrice.innerText = "$ " + price.toFixed(2);
 }
 
-// calculates the total checkout price
-// function cartTotalPrice() {
-//     console.log("Calculating Price...")
-//     let totalPrice = document.querySelector('.carttotal:nth-child(2)');
-//     let price = 0;
-
-//     for(const roll of rollSet) {
-//         price = price + parseFloat(rcalculatePrice(roll));
-//     }
-
-//     totalPrice.innerText = "$ " + price.toFixed(2);
-// }
-
-newCartTotalPrice();
-
 // calls to calculate price
-//cartTotalPrice();
+cartTotalPrice();
 
 function submitRoll() {
   const cinnamonTitle = document.querySelector('.subtext').innerHTML.replace(' Cinnamon Roll','');

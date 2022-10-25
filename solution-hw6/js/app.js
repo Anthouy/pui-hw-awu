@@ -270,7 +270,7 @@ function updateElement(roll) {
     const rollPackElement = roll.element.querySelector(".pack-size"); 
     const rollPriceElement = roll.element.querySelector(".rightmargin");
 
-    const calcPrice = calculatePrice(roll);
+    const calcPrice = rcalculatePrice(roll);
 
     // duplicates the cart content to the corresponding html elements
     rollImageElement.src = 'assets/products/' + rolls[roll.type].imageFile; 
@@ -283,7 +283,7 @@ function updateElement(roll) {
 }
 
 // calculates total price of each roll selection with glaze + pack size modifications
-function calculatePrice(roll) {
+function rcalculatePrice(roll) {
     // iterates through allGlazing to find if same glaze as roll's
     // sets the glazingChange to the price difference
     let glazingChange = 0;
@@ -332,7 +332,7 @@ function cartTotalPrice() {
     let price = 0;
 
     for(const roll of rollSet) {
-        price = price + parseFloat(calculatePrice(roll));
+        price = price + parseFloat(rcalculatePrice(roll));
     }
 
     totalPrice.innerText = "$ " + price.toFixed(2);

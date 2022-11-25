@@ -738,6 +738,13 @@ margin: 0;
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #eee;
 }
+.bubble {
+  overflow: hidden;
+  height: 80px;
+  background: url('../images/bubbles/UXBubble.png');
+  background-size:cover;
+  color:#fff;
+}
 #business-stats {
   padding: 100px 0 70px;
   background: #FFFFFF;

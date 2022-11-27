@@ -1174,7 +1174,7 @@ transition: all .3s;
 }
 
 #questionFront {
-    padding: 0px 0;
+    padding: 400px 0;
     background: #fff;
 }
 
@@ -2483,5 +2483,5 @@ display:none;
 }
 }
 .chevroncontainer {
-margin-top: 80px;
+margin-top: 450px;
 }

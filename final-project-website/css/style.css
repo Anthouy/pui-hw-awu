@@ -2491,4 +2491,5 @@ padding-top: 350px;
 .descriptioncontainer {
 display: flex;
 text-align: center;
+justify-content: center;
 }

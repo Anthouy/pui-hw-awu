@@ -1,11 +1,23 @@
-Bootstrap/HTML5 Responsive Template 
+Amaze Photography Bootstrap HTML5 template is a flat clean designed template for a profissional photographers. This template fits for personal portfolios to showcase your works and achivements. This is a clean responsive web design template you can use for personal portfolio’s websites to show case your work and CV or Resume template. This template is built on Bootstrap framework which give flexibilty to customeise the theme easly as per the user requirements. All latest technology HTML5 CSS3, jQuery and bootstrap. Download it free now!
 
-Add Life Health Fitness Free Bootstrap HTML5 Template is a simple elegant designed HTML5 Bootstrap template suits for Health and fitness industry. This can be also fits to  other types of health care business, Gym studio, Arerobics, sports, consultancy, portfolio and many more. This template is built using latest Bootstrap framework with html5 and css3 which is very easy to customise the theme as per your requirements. This template designed with height quality standards. This a responsive template fits in all devices with multi browser support. Download for free.  
+Key features
+-------------
+Twitter Bootstrap 3.3.1
+Clean & Developer-friendly HTML5 and CSS3 code
+100% Responsive Layout Design
+One Page
+Multipurpose theme
+Google Fonts Support
+Font Awesome 
+Smooth Scrolling 
+Fully Customizable
+Contact Form
+
 
 Credits :
 -------
 => Design and developed: "WebThemez"  http://webthemez.com
-=> Photos used in template: **Unsplash** - http://unsplash.com
+=> Photos used in template: **Unsplash** - http://unsplash.com, http://risewall.com/home-business-team-wallpapers.html
 => For more free web themes: http://webthemez.com
 => Framework : http://getbootstrap.com
 

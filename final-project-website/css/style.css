@@ -501,27 +501,6 @@ p {
 background: rgba(10, 21, 37, 0.69);
 height: 650px;
 }
-#hero-banner{
-    overflow: hidden;
-    height: 350px;
-    background: url('../img/banner 2.jpg');
-    background-size:cover;
-    color:#fff;
-  }
-#hero-banner.banner-inner {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-color: #000;
-}
-#hero-banner.banner-inner h2 > span {
-color: #45aed6;
-}
-#hero-banner.banner-inner .btn {
-margin-top: 10px;
-} 
 .white_pad {
     position: relative;
     right: 0px;

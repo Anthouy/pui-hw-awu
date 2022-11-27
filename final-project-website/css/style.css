@@ -1172,6 +1172,11 @@ transition: all .3s;
     background: #fff;
 }
 
+#questionFront {
+    padding: 120px 0;
+    background: #fff;
+}
+
 /* Contact
 ---------------------------------*/
 .page_section.contact {

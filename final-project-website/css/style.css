@@ -2489,7 +2489,8 @@ padding-top: 350px;
 padding-top: 350px;
 }
 .descriptioncontainer {
-display: flex;
+/* display: flex; */
+width: 100%;
 text-align: center;
 justify-content: center;
 }

@@ -1169,12 +1169,13 @@ transition: all .3s;
 }
 #aboutUs {
     height: 100vh;
+    padding: 450px 0;
     background: #fff;
 }
 
 #questionFront {
     height: 100vh;
-    padding-top: 300px;
+
     background: #fff;
 }
 

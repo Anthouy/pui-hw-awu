@@ -1173,7 +1173,7 @@ transition: all .3s;
 }
 
 #questionFront {
-    padding: 450px 0;
+    height: 100vh;
     background: #fff;
 }
 

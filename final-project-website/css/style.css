@@ -2483,14 +2483,14 @@ display:none;
 }
 .chevroncontainer {
 text-align: center;
-padding-top: 350px;
+padding-top: 330px;
 }
 .questioncontainer {
 padding-top: 350px;
 }
 .descriptioncontainer {
-/* display: flex; */
-width: 100%;
+display: flex;
+/* width: 100%; */
 text-align: center;
 justify-content: center;
 }

@@ -1175,7 +1175,6 @@ transition: all .3s;
 
 #questionFront {
     height: 100vh;
-
     background: #fff;
 }
 
@@ -2486,4 +2485,7 @@ display:none;
 .chevroncontainer {
 text-align: center;
 margin-top: 350px;
+}
+.questioncontainer {
+    margin-top: 300px;
 }

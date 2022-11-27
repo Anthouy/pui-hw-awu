@@ -503,7 +503,7 @@ height: 650px;
 }
 #hero-banner{
     overflow: hidden;
-    height: 700px;
+    height: 350px;
     background: url('../img/banner 2.jpg');
     background-size:cover;
     color:#fff;

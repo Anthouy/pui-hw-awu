@@ -2490,7 +2490,7 @@ padding-top: 350px;
 }
 .descriptioncontainer {
 text-align: center;
-padding-left: auto;
-padding-right: auto;
+margin-left: auto;
+margin-right: auto;
 width: 50%;
 }

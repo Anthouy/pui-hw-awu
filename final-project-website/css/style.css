@@ -2486,6 +2486,7 @@ text-align: center;
 padding-top: 350px;
 }
 .questioncontainer {
+    align-content: center;
 padding-top: 350px;
 }
 .descriptioncontainer {

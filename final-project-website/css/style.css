@@ -2483,7 +2483,7 @@ display:none;
 }
 .chevroncontainer {
 text-align: center;
-height: fit-content;
+height: 100%;
 }
 .questioncontainer {
 padding-top: 350px;

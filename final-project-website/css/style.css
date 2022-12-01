@@ -2485,6 +2485,8 @@ display:none;
 }
 }
 .chevroncontainer {
+display: flex;
+justify-content: end;
 height: fit-content;
 text-align: center;
 }

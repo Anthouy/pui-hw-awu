@@ -2486,7 +2486,7 @@ display:none;
 }
 .chevroncontainer {
 display: flex;
-align-content: flex-end;
+align-content: center;
 height: fit-content;
 text-align: center;
 }

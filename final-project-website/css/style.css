@@ -2488,7 +2488,7 @@ display:none;
 display: flex;
 justify-content: center;
 align-content: center;
-height: fit-content;
+height: 50%;
 text-align: center;
 }
 .questioncontainer {

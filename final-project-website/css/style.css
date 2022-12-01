@@ -2482,8 +2482,8 @@ display:none;
 }
 }
 .chevroncontainer {
+height: 100%;
 text-align: center;
-margin-top: 550px;
 }
 .questioncontainer {
 height: 100%;

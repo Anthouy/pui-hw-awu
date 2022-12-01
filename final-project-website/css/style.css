@@ -1173,6 +1173,8 @@ transition: all .3s;
 }
 
 #questionFront {
+    display: flex;
+    align-items: center;
     height: 93vh;
     background: #fff;
 }

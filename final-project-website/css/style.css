@@ -1613,7 +1613,8 @@ padding:80px 0 60px;
 }
 
 .portfolio-item .portfolio_img img {
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .portfolio-item:hover .item_overlay {

@@ -1168,7 +1168,10 @@ background-color: #11D25D;
 transition: all .3s;
 }
 #aboutUs {
-    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 93vh;
     background: #fff;
 }
 

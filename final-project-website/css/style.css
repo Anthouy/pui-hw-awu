@@ -2487,7 +2487,7 @@ display:none;
 .chevroncontainer {
 display: flex;
 justify-content: center;
-align-content: flex-start;
+align-content: stretch;
 height: 500px;
 text-align: center;
 }

@@ -2490,3 +2490,8 @@ display: flex;
 text-align: center;
 justify-content: center;
 }
+.portfolio-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 480px;
+}

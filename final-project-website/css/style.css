@@ -2495,3 +2495,12 @@ justify-content: center;
     overflow: hidden;
     height: 480px;
 }
+
+.article-item {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1);
+    width: 337px;
+    opacity: 1;
+}

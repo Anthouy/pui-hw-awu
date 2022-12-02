@@ -1172,6 +1172,10 @@ transition: all .3s;
     background: #fff;
 }
 
+#experience {
+    margin-top: 75px;
+}
+
 /* Contact
 ---------------------------------*/
 .page_section.contact {

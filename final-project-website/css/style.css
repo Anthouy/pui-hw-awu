@@ -2509,6 +2509,9 @@ background-color: #000;
 .articletitlecontainer h2{
 color: #FEE16F;
 }
+.articletitlecontainer h1{
+font-size: 18px;
+}
 .descriptioncontainer {
 display: flex;
 /* width: 100%; */

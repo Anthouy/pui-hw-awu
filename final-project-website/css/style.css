@@ -2498,7 +2498,10 @@ text-align: center;
 .questioncontainer {
 height: 100%;
 }
-.questioncontainer h2{
+.articlecontainer {
+height: 100%;
+}
+.articlecontainer h2{
 color: #BEA726;
 }
 .descriptioncontainer {

@@ -1172,6 +1172,16 @@ transition: all .3s;
     background: #fff;
 }
 
+#articlefront {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 93vh;
+    background: #fff;
+    margin-bottom: 50px;
+}
+
+
 #experience {
     padding: 60px;
 }

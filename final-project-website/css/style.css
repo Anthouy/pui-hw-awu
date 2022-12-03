@@ -1161,6 +1161,8 @@ transition: all .3s;
     justify-content: center;
     align-items: center;
     height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background: #fff;
 }
 

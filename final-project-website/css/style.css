@@ -2501,7 +2501,13 @@ height: 100%;
 .articlecontainer {
 height: 100%;
 }
-.articlecontainer h2{
+.articletitlecontainer {
+padding-top: 25px;
+padding-left: 25px;
+padding-right: 25px;
+background-color: #000;
+}
+.articletitlecontainer h2{
 color: #FEE16F;
 }
 .descriptioncontainer {

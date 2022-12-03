@@ -2496,7 +2496,6 @@ justify-content: center;
 }
 .articletextcontainer {
 display: flex;
-/* width: 100%; */
 text-align: left;
 justify-content: center;
 }

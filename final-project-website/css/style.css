@@ -1168,7 +1168,7 @@ transition: all .3s;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 93vh;
+    height: 100vh;
     background: #fff;
 }
 
@@ -1176,7 +1176,7 @@ transition: all .3s;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 93vh;
+    height: 100vh;
     background: #fff;
     margin-bottom: 50px;
 }

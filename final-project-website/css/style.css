@@ -2505,6 +2505,7 @@ text-align: center;
 justify-content: center;
 }
 .articletextcontainer {
+padding: 50px;
 display: flex;
 text-align: left;
 justify-content: center;

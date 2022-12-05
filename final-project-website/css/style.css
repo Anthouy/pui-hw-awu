@@ -272,6 +272,7 @@ body {
     font-size: 14px;
     font-weight: normal;
     color: #888888;
+    overflow: hidden;
     margin: 0;
 }
 

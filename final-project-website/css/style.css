@@ -2295,7 +2295,6 @@ div.mc-image {
     background:#fff;
     border-radius:8px;
     overflow:hidden;
-    -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
 
 .news-content .news-media a:hover img{
